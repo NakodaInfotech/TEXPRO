@@ -26,6 +26,13 @@ Public Class Login
                 ALLOWEINVOICE = Convert.ToBoolean(DT.Rows(0).Item("ALLOWEINVOICE"))
 
 
+
+
+                'DONE TEMP
+
+
+
+
                 If ClientName = "DHANLAXMI" Then
                     If Now.Date > DateTime.Parse("15.04.2026 00:00") Then
                         Dim DTNEW As DataTable = OBJCMN.Execute_Any_String("UPDATE VERSION SET VERSION_NO='1.0.0000'", "", "")
