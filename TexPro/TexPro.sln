@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TexPro", "TexPro V1.0\TexPro.vbproj", "{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}"
+	ProjectSection(ProjectDependencies) = postProject
+		{11ABB8BA-29FE-4725-9B0F-E65FE8F28215} = {11ABB8BA-29FE-4725-9B0F-E65FE8F28215}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BL", "BL\BL.vbproj", "{11ABB8BA-29FE-4725-9B0F-E65FE8F28215}"
+	ProjectSection(ProjectDependencies) = postProject
+		{63271A3C-FCFA-4846-8834-E071B951BA52} = {63271A3C-FCFA-4846-8834-E071B951BA52}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DB", "DB\DB.vbproj", "{63271A3C-FCFA-4846-8834-E071B951BA52}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TEXPROSETUP", "TEXPROSETUP\TEXPROSETUP.vdproj", "{29887C09-7353-42F6-998C-498E6B7C7CCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11ABB8BA-29FE-4725-9B0F-E65FE8F28215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11ABB8BA-29FE-4725-9B0F-E65FE8F28215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11ABB8BA-29FE-4725-9B0F-E65FE8F28215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11ABB8BA-29FE-4725-9B0F-E65FE8F28215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63271A3C-FCFA-4846-8834-E071B951BA52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63271A3C-FCFA-4846-8834-E071B951BA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63271A3C-FCFA-4846-8834-E071B951BA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63271A3C-FCFA-4846-8834-E071B951BA52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29887C09-7353-42F6-998C-498E6B7C7CCC}.Debug|Any CPU.ActiveCfg = Debug
+		{29887C09-7353-42F6-998C-498E6B7C7CCC}.Debug|Any CPU.Build.0 = Debug
+		{29887C09-7353-42F6-998C-498E6B7C7CCC}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccProjectName0 = \u0022$/TexPro.root/TexPro\u0022,\u0020VUTBAAAA
+		SccLocalPath0 = ..\\..\\..\\..
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectFilePathRelativizedFromConnection0 = VSS\\TEXPRO\\VSS\\TexPro\\
+		SccProjectUniqueName1 = BL\\BL.vbproj
+		SccLocalPath1 = ..\\..\\..\\..
+		SccProjectFilePathRelativizedFromConnection1 = VSS\\TEXPRO\\VSS\\TexPro\\BL\\
+		SccProjectUniqueName2 = DB\\DB.vbproj
+		SccLocalPath2 = ..\\..\\..\\..
+		SccProjectFilePathRelativizedFromConnection2 = VSS\\TEXPRO\\VSS\\TexPro\\DB\\
+		SccProjectUniqueName3 = TexPro\u0020V1.0\\TexPro.vbproj
+		SccLocalPath3 = ..\\..\\..\\..
+		SccProjectFilePathRelativizedFromConnection3 = VSS\\TEXPRO\\VSS\\TexPro\\TexPro\u0020V1.0\\
+		SccProjectUniqueName4 = TEXPROSETUP\\TEXPROSETUP.vdproj
+		SccLocalPath4 = ..\\..\\..\\..
+		SccProjectFilePathRelativizedFromConnection4 = VSS\\TEXPRO\\VSS\\TexPro\\TEXPROSETUP\\
+	EndGlobalSection
+EndGlobal

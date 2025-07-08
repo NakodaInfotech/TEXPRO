@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11ABB8BA-29FE-4725-9B0F-E65FE8F28215}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BL</RootNamespace>
+    <AssemblyName>BL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Excel, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\dlls\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ClsCommon.vb" />
+    <Compile Include="Common\ClsCommonMaster.vb" />
+    <Compile Include="Common\ClsEmailMaster.vb" />
+    <Compile Include="Common\ClsMDIMain.vb" />
+    <Compile Include="Common\ClsProgressBar.vb" />
+    <Compile Include="Common\ClsReportDesigner.vb" />
+    <Compile Include="Common\ClsYearTransfer.vb" />
+    <Compile Include="Masters\ClsAccountsMaster.vb" />
+    <Compile Include="Masters\clsaddress.vb" />
+    <Compile Include="Masters\ClsCategoryMaster.vb" />
+    <Compile Include="Masters\ClsCityMaster.vb" />
+    <Compile Include="Masters\ClsCmpDetails.vb" />
+    <Compile Include="Masters\ClsCmpMaster.vb" />
+    <Compile Include="Masters\ClsColorMaster.vb" />
+    <Compile Include="Masters\ClsColorRateMaster.vb" />
+    <Compile Include="Masters\ClsContractorWorkerRate.vb" />
+    <Compile Include="Masters\ClsDeducteetypeMaster.vb" />
+    <Compile Include="Masters\ClsDepartmentMaster.vb" />
+    <Compile Include="Masters\ClsDesignMaster.vb" />
+    <Compile Include="Masters\ClsDesignRecipe.vb" />
+    <Compile Include="Masters\ClsDiscountMaster.vb" />
+    <Compile Include="Masters\ClsDyeingRecipe.vb" />
+    <Compile Include="Masters\Clsexcisemaster.vb" />
+    <Compile Include="Masters\ClsFoldMaster.vb" />
+    <Compile Include="Masters\Clsformtype.vb" />
+    <Compile Include="Masters\ClsGodownMaster.vb" />
+    <Compile Include="Masters\ClsGroupMaster.vb" />
+    <Compile Include="Masters\ClsGroupOfCompanies.vb" />
+    <Compile Include="Masters\ClsHSNMaster.vb" />
+    <Compile Include="Masters\ClsIssueMerchantMaster.vb" />
+    <Compile Include="Masters\ClsItemMaster.vb" />
+    <Compile Include="Masters\ClsItemPriceMaster.vb" />
+    <Compile Include="Masters\ClsMerchantPriceMaster.vb" />
+    <Compile Include="Masters\ClsNatureOfPayment.vb" />
+    <Compile Include="Masters\ClsPackingTypeMaster.vb" />
+    <Compile Include="Masters\ClsPartyBankMaster.vb" />
+    <Compile Include="Masters\ClsPartyGroupMaster.vb" />
+    <Compile Include="Masters\ClsPRG.vb" />
+    <Compile Include="Masters\ClsLogin.vb" />
+    <Compile Include="Masters\ClsMachineMaster.vb" />
+    <Compile Include="Masters\ClsMaterialTypeMaster.vb" />
+    <Compile Include="Masters\ClsMerchantMaster.vb" />
+    <Compile Include="Masters\ClsOctroimaster.vb" />
+    <Compile Include="Masters\ClsPackingUnitMaster.vb" />
+    <Compile Include="Masters\ClsPieceTypeMaster.vb" />
+    <Compile Include="Masters\ClsPrintingTypeMaster.vb" />
+    <Compile Include="Masters\ClsProcessContractorConfig.vb" />
+    <Compile Include="Masters\ClSProcessMaster.vb" />
+    <Compile Include="Masters\ClsProcessTypeMaster.vb" />
+    <Compile Include="Masters\ClsQualityMaster.vb" />
+    <Compile Include="Masters\ClsQualityPriceMaster.vb" />
+    <Compile Include="Masters\ClsRateTypeMaster.vb" />
+    <Compile Include="Masters\ClsRegisterMaster.vb" />
+    <Compile Include="Masters\ClsSalesmanMaster.vb" />
+    <Compile Include="Masters\ClsStampMaster.vb" />
+    <Compile Include="Masters\ClsStockMaster.vb" />
+    <Compile Include="Masters\ClsSubCategoryMaster.vb" />
+    <Compile Include="Masters\ClsTaxMaster.vb" />
+    <Compile Include="Masters\ClsTermMaster.vb" />
+    <Compile Include="Masters\ClsTPIMaster.vb" />
+    <Compile Include="Masters\ClsUnitMaster.vb" />
+    <Compile Include="Masters\ClsUserGodownTagging.vb" />
+    <Compile Include="Masters\ClsUserMaster.vb" />
+    <Compile Include="Masters\ClsWeaverMaster.vb" />
+    <Compile Include="Masters\ClsYearMaster.vb" />
+    <Compile Include="Masters\ClsSUPERVISIORMaster.vb" />
+    <Compile Include="Masters\ClsCONTRACTORMaster.vb" />
+    <Compile Include="Masters\ClsScreenMaster.vb" />
+    <Compile Include="Masters\ClsdesignationMaster.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Transactions\Accounts\Balance Sheet\ClsBalanceSheet.vb" />
+    <Compile Include="Transactions\Accounts\Bank Reco\ClsBankReco.vb" />
+    <Compile Include="Transactions\Accounts\C Form\ClsCForm.vb" />
+    <Compile Include="Transactions\Accounts\ClsInterestCalc.vb" />
+    <Compile Include="Transactions\Accounts\Contra\ClsContra.vb" />
+    <Compile Include="Transactions\Accounts\Credit Note\ClsCreditNote.vb" />
+    <Compile Include="Transactions\Accounts\Debit Note\ClsDebitNote.vb" />
+    <Compile Include="Transactions\Accounts\Expense Voucher\ClsExpenseVoucher.vb" />
+    <Compile Include="Transactions\Accounts\Journal\ClsJournalMaster.vb" />
+    <Compile Include="Transactions\Accounts\Manual Matching\ClsManualMatching.vb" />
+    <Compile Include="Transactions\Accounts\Opening\ClsOpening.vb" />
+    <Compile Include="Transactions\Accounts\Opening\ClsOpeningDrCr.vb" />
+    <Compile Include="Transactions\Accounts\Opening\ClsOpeningPurchaseOrder.vb" />
+    <Compile Include="Transactions\Accounts\Opening\ClsOpeningSaleOrder.vb" />
+    <Compile Include="Transactions\Accounts\Opening\ClsOpeningStoreStock.vb" />
+    <Compile Include="Transactions\Accounts\Payment\ClsPaymentMaster.vb" />
+    <Compile Include="Transactions\Accounts\ProfitLoss\ClsProfitLoss.vb" />
+    <Compile Include="Transactions\Accounts\Receipt\ClsReceiptMaster.vb" />
+    <Compile Include="Transactions\Accounts\Registers\Bank Register\ClsBankRegister.vb" />
+    <Compile Include="Transactions\Accounts\Registers\Cash Register\ClsCashRegister.vb" />
+    <Compile Include="Transactions\Accounts\Registers\Contra Register\ClsContraRegister.vb" />
+    <Compile Include="Transactions\Accounts\Registers\Credit Note Register\ClsCNRegister.vb" />
+    <Compile Include="Transactions\Accounts\Registers\Day Book\ClsDayBook.vb" />
+    <Compile Include="Transactions\Accounts\Registers\Debit Note Register\ClsDNRegister.vb" />
+    <Compile Include="Transactions\Accounts\Registers\Group Trans Register\ClsGroupRegister.vb" />
+    <Compile Include="Transactions\Accounts\Registers\Journal Register\ClsJournalRegister.vb" />
+    <Compile Include="Transactions\Accounts\Registers\Ledger Book\ClsLedgerBook.vb" />
+    <Compile Include="Transactions\Accounts\Registers\Purchase Register\ClsPurchaseRegister.vb" />
+    <Compile Include="Transactions\Accounts\Registers\Sale Register\ClsSaleRegister.vb" />
+    <Compile Include="Transactions\Accounts\Registers\Tax Register\ClsPurchaseTaxRegister.vb" />
+    <Compile Include="Transactions\Accounts\Registers\Tax Register\ClsSalesTaxRegister.vb" />
+    <Compile Include="Transactions\Accounts\TDS\ClsTDSCertificate.vb" />
+    <Compile Include="Transactions\Accounts\TDS\ClsTDSChallan.vb" />
+    <Compile Include="Transactions\Accounts\Trial Balance\ClsTrialBalance.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsCuttingProcess.vb" />
+    <Compile Include="Masters\ClsExpense.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsDesignIssue.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsInterGodownTransfer.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsMfg.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsMfg2.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsPSJob.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsJO.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsJI.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsFPS.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsFinalCuttingProcess.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsCONSUME.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsBO.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsMATERIALUSE.vb" />
+    <Compile Include="Transactions\Manufacturing\ClsSA.vb" />
+    <Compile Include="Transactions\Purchase\ClsGreyPurchaseOrder.vb" />
+    <Compile Include="Transactions\Purchase\Clsli.vb" />
+    <Compile Include="Transactions\Purchase\ClsLoan.vb" />
+    <Compile Include="Transactions\Purchase\ClsGrn.vb" />
+    <Compile Include="Transactions\Purchase\ClsGRNChecking.vb" />
+    <Compile Include="Transactions\Purchase\ClsPartypackingSlip.vb" />
+    <Compile Include="Transactions\Purchase\ClsProcessOut.vb" />
+    <Compile Include="Transactions\Purchase\ClsPurchaseMaster.vb" />
+    <Compile Include="Transactions\Purchase\ClsPurchaseOrder.vb" />
+    <Compile Include="Transactions\Purchase\ClsPurchaseQuotation.vb" />
+    <Compile Include="Transactions\Purchase\ClsPurchaseRequest.vb" />
+    <Compile Include="Transactions\Purchase\ClsGP.vb" />
+    <Compile Include="Transactions\Purchase\ClsProcessIn.vb" />
+    <Compile Include="Transactions\Sale\ClsInvoiceMaster.vb" />
+    <Compile Include="Transactions\Sale\ClsPackingSummary.vb" />
+    <Compile Include="Transactions\Sale\ClsProductionPlanning.vb" />
+    <Compile Include="Transactions\Sale\ClsSaleOrder.vb" />
+    <Compile Include="Transactions\Sale\ClsGDN.vb" />
+    <Compile Include="Transactions\Sale\ClsProformaInvoice.vb" />
+    <Compile Include="Transactions\Sale\ClsSaleReturn.vb" />
+    <Compile Include="Utilities\ClsDataReco.vb" />
+    <Compile Include="Utilities\ClsLogsDelete.vb" />
+    <Compile Include="Utilities\ClsLogsUpdate.vb" />
+    <Compile Include="Utilities\ClsTermsAndConditions.vb" />
+    <Compile Include="Utilities\ClsUploadSign.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DB\DB.vbproj">
+      <Project>{63271A3C-FCFA-4846-8834-E071B951BA52}</Project>
+      <Name>DB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,108 @@
+﻿
+Imports DB
+
+Public Class ClsProcessContractorConfig
+
+    Private objDBOperation As DBOperation
+    Public alParaval As New ArrayList
+
+#Region "Constructor"
+    Public Sub New()
+        Try
+            objDBOperation = New DBOperation
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
+#End Region
+
+#Region "Functions"
+
+    Public Function SAVE() As Integer
+        Dim intResult As Integer
+        Try
+            'save purchase REQUEST
+            Dim strCommand As String = "SP_MASTER_PROCESSCONFIG_SAVE"
+            Dim alParameter As New ArrayList
+            With alParameter
+
+                Dim I As Integer = 0
+
+                .Add(New SqlClient.SqlParameter("@PROCESS", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@CONTRACTOR", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@SUPERVISOR", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@cmpid", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@yearid", alParaval(I)))
+                I = I + 1
+
+            End With
+
+            intResult = objDBOperation.executeNonQuery(strCommand, alParameter)
+
+        Catch ex As Exception
+            Throw ex
+        End Try
+        Return intResult
+
+    End Function
+
+    Public Function UPDATE() As Integer
+        Dim intResult As Integer
+        Try
+            'Update purchase order
+            Dim strCommand As String = "SP_MASTER_PROCESSCONFIG_UPDATE"
+            Dim alParameter As New ArrayList
+            With alParameter
+                Dim I As Integer = 0
+                .Add(New SqlClient.SqlParameter("@PROCESS", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@CONTRACTOR", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@SUPERVISOR", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@cmpid", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@yearid", alParaval(I)))
+                I = I + 1
+
+            End With
+
+            intResult = objDBOperation.executeNonQuery(strCommand, alParameter)
+
+        Catch ex As Exception
+            Throw ex
+        End Try
+        Return 0
+    End Function
+
+    Public Function DELETE() As DataTable
+        Dim DTTABLE As DataTable
+        Try
+            'Update purchase order
+            Dim strCommand As String = "SP_MASTER_PROCESSCONFIG_DELETE"
+            Dim alParameter As New ArrayList
+            With alParameter
+                Dim I As Integer = 0
+                .Add(New SqlClient.SqlParameter("@PROCESS", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@CMPID", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@yearid", alParaval(I)))
+                I = I + 1
+
+            End With
+
+            DTTABLE = objDBOperation.execute(strCommand, alParameter).Tables(0)
+            Return DTTABLE
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+
+#End Region
+
+End Class
