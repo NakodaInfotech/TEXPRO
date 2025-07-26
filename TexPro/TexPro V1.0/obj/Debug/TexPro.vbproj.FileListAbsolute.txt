@@ -490,7 +490,3 @@ D:\VSS\VSS\TEXPRO\VSS\TexPro\TexPro V1.0\bin\Debug\BL.xml
 D:\VSS\VSS\TEXPRO\VSS\TexPro\TexPro V1.0\bin\Debug\DB.pdb
 D:\VSS\VSS\TEXPRO\VSS\TexPro\TexPro V1.0\bin\Debug\DB.xml
 D:\VSS\VSS\TEXPRO\VSS\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.SOFilter.resources
-D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\TexPro V1.0.exe.config
-D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.exe
-D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.xml
-D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.pdb
