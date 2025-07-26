@@ -1848,7 +1848,7 @@ CHECKNEXTLINEMTRS:
                 Next
 
                 'CMBAGENT.Text = DTSO.Rows(0).Item("AGENTNAME")
-                If DTSO.Rows(0).Item("TRANSNAME") <> "" Then CMBTRANS.Text = DTSO.Rows(0).Item("TRANSNAME")
+                If DTSO.Rows(0).Item("TRANSNAME") <> "" And ClientName <> "TULSI" Then CMBTRANS.Text = DTSO.Rows(0).Item("TRANSNAME")
                 CMBSHIPTO.Text = DTSO.Rows(0).Item("SHIPTO")
 
 

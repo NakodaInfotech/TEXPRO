@@ -528,7 +528,7 @@ Public Class SaleOrder
     Private Sub GRIDSO_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles GRIDSO.KeyDown
 
         Try
-            If e.KeyCode = Keys.Delete And GRIDSO.RowCount > 0 Then
+            If e.KeyCode = Keys.Delete And GRIDSO.RowCount > 0 And LBLLOCKED.Visible = False Then
 
                 If Convert.ToBoolean(GRIDSO.CurrentRow.Cells(GCLOSED.Index).Value) = True Or Val(GRIDSO.CurrentRow.Cells(GOUTBALES.Index).Value) > 0 Then 'If row.Cells(16).Value <> "0" Then 
                     MsgBox("Item Locked. First Delete from Challan")
@@ -594,7 +594,7 @@ Public Class SaleOrder
             BLN = False
         End If
 
-        If LBLLOCKED.Visible = True Then
+        If LBLLOCKED.Visible = True And ClientName <> "TULSI" Then
             EP.SetError(LBLLOCKED, "Challan Raised, Delete Challan First")
             BLN = False
         End If
