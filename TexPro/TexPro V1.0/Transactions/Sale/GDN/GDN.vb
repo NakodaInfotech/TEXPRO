@@ -378,7 +378,7 @@ CHECKNEXTLINEMTRS:
 
                 For i As Integer = 0 To selectpstable.Rows.Count - 1
                     If ClientName = "DHANLAXMI" Then selectpstable.Rows(i).Item("FBNO") = ""
-                    gridps.Rows.Add(0, selectpstable.Rows(i).Item("BALENO"), selectpstable.Rows(i).Item("FBNO"), selectpstable.Rows(i).Item("piecetype"), selectpstable.Rows(i).Item("MERCHANT"), selectpstable.Rows(i).Item("cut"), selectpstable.Rows(i).Item("QUALITY"), Val(selectpstable.Rows(i).Item("PCS")), Format(Val(selectpstable.Rows(i).Item("MTRS")), "0.00"), Format(Val(selectpstable.Rows(i).Item("wt")), "0.00"), "", selectpstable.Rows(i).Item("NAME"), 0, selectpstable.Rows(i).Item("TYPE"), 0, 0)
+                    gridps.Rows.Add(0, selectpstable.Rows(i).Item("BALENO"), selectpstable.Rows(i).Item("FBNO"), selectpstable.Rows(i).Item("piecetype"), selectpstable.Rows(i).Item("MERCHANT"), selectpstable.Rows(i).Item("cut"), selectpstable.Rows(i).Item("QUALITY"), Val(selectpstable.Rows(i).Item("PCS")), Format(Val(selectpstable.Rows(i).Item("MTRS")), "0.00"), Format(Val(selectpstable.Rows(i).Item("wt")), "0.00"), "", "", selectpstable.Rows(i).Item("NAME"), 0, selectpstable.Rows(i).Item("TYPE"), 0, 0)
                 Next
                 gridps.FirstDisplayedScrollingRowIndex = gridps.RowCount - 1
                 getsrno(gridps)
