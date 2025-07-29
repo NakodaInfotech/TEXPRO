@@ -32,15 +32,15 @@ Partial Class GDNGridDetails
         Me.GDELDATE = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GNAME = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.Gagent = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GTRANSNAME = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GLOCALTRANSNAME = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.GEWB = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GBALENO = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GMERCHANT = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GPCS = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GMTRS = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GLRNO = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GPARTYNAME = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GTRANSNAME = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GLOCALTRANSNAME = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GEWB = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.cmdexit = New System.Windows.Forms.Button()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
@@ -50,6 +50,7 @@ Partial Class GDNGridDetails
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.lbl = New System.Windows.Forms.Label()
         Me.cmdok = New System.Windows.Forms.Button()
+        Me.GBILLNO = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.BlendPanel1.SuspendLayout()
         CType(Me.gridbilldetails, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridbill, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -110,7 +111,7 @@ Partial Class GDNGridDetails
         '
         Me.gridbill.Appearance.Row.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridbill.Appearance.Row.Options.UseFont = True
-        Me.gridbill.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.gsrno, Me.gdate, Me.GDELDATE, Me.GNAME, Me.Gagent, Me.GBALENO, Me.GMERCHANT, Me.GPCS, Me.GMTRS, Me.GLRNO, Me.GPARTYNAME, Me.GTRANSNAME, Me.GLOCALTRANSNAME, Me.GEWB})
+        Me.gridbill.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.gsrno, Me.gdate, Me.GDELDATE, Me.GNAME, Me.Gagent, Me.GBALENO, Me.GMERCHANT, Me.GPCS, Me.GMTRS, Me.GLRNO, Me.GBILLNO, Me.GPARTYNAME, Me.GTRANSNAME, Me.GLOCALTRANSNAME, Me.GEWB})
         Me.gridbill.GridControl = Me.gridbilldetails
         Me.gridbill.Name = "gridbill"
         Me.gridbill.OptionsBehavior.Editable = False
@@ -153,7 +154,7 @@ Partial Class GDNGridDetails
         '
         Me.GNAME.Caption = "Customer Name"
         Me.GNAME.FieldName = "CMPNAME"
-        Me.GNAME.ImageIndex = 0
+        Me.GNAME.ImageOptions.ImageIndex = 0
         Me.GNAME.Name = "GNAME"
         Me.GNAME.Visible = True
         Me.GNAME.VisibleIndex = 3
@@ -167,32 +168,6 @@ Partial Class GDNGridDetails
         Me.Gagent.Visible = True
         Me.Gagent.VisibleIndex = 4
         Me.Gagent.Width = 200
-        '
-        'GTRANSNAME
-        '
-        Me.GTRANSNAME.Caption = "Transport"
-        Me.GTRANSNAME.FieldName = "TRANSNAME"
-        Me.GTRANSNAME.Name = "GTRANSNAME"
-        Me.GTRANSNAME.Visible = True
-        Me.GTRANSNAME.VisibleIndex = 11
-        Me.GTRANSNAME.Width = 120
-        '
-        'GLOCALTRANSNAME
-        '
-        Me.GLOCALTRANSNAME.Caption = "Local Transport"
-        Me.GLOCALTRANSNAME.FieldName = "LOCALTRANSNAME"
-        Me.GLOCALTRANSNAME.Name = "GLOCALTRANSNAME"
-        Me.GLOCALTRANSNAME.Visible = True
-        Me.GLOCALTRANSNAME.VisibleIndex = 12
-        Me.GLOCALTRANSNAME.Width = 120
-        '
-        'GEWB
-        '
-        Me.GEWB.Caption = "Eway Bill No"
-        Me.GEWB.FieldName = "EWBNO"
-        Me.GEWB.Name = "GEWB"
-        Me.GEWB.Visible = True
-        Me.GEWB.VisibleIndex = 13
         '
         'GBALENO
         '
@@ -247,8 +222,34 @@ Partial Class GDNGridDetails
         Me.GPARTYNAME.FieldName = "PARTYNAME"
         Me.GPARTYNAME.Name = "GPARTYNAME"
         Me.GPARTYNAME.Visible = True
-        Me.GPARTYNAME.VisibleIndex = 10
+        Me.GPARTYNAME.VisibleIndex = 11
         Me.GPARTYNAME.Width = 250
+        '
+        'GTRANSNAME
+        '
+        Me.GTRANSNAME.Caption = "Transport"
+        Me.GTRANSNAME.FieldName = "TRANSNAME"
+        Me.GTRANSNAME.Name = "GTRANSNAME"
+        Me.GTRANSNAME.Visible = True
+        Me.GTRANSNAME.VisibleIndex = 12
+        Me.GTRANSNAME.Width = 120
+        '
+        'GLOCALTRANSNAME
+        '
+        Me.GLOCALTRANSNAME.Caption = "Local Transport"
+        Me.GLOCALTRANSNAME.FieldName = "LOCALTRANSNAME"
+        Me.GLOCALTRANSNAME.Name = "GLOCALTRANSNAME"
+        Me.GLOCALTRANSNAME.Visible = True
+        Me.GLOCALTRANSNAME.VisibleIndex = 13
+        Me.GLOCALTRANSNAME.Width = 120
+        '
+        'GEWB
+        '
+        Me.GEWB.Caption = "Eway Bill No"
+        Me.GEWB.FieldName = "EWBNO"
+        Me.GEWB.Name = "GEWB"
+        Me.GEWB.Visible = True
+        Me.GEWB.VisibleIndex = 14
         '
         'cmdexit
         '
@@ -335,6 +336,14 @@ Partial Class GDNGridDetails
         Me.cmdok.Text = "&Ok"
         Me.cmdok.UseVisualStyleBackColor = False
         '
+        'GBILLNO
+        '
+        Me.GBILLNO.Caption = "Bill No"
+        Me.GBILLNO.FieldName = "BILLNO"
+        Me.GBILLNO.Name = "GBILLNO"
+        Me.GBILLNO.Visible = True
+        Me.GBILLNO.VisibleIndex = 10
+        '
         'GDNGridDetails
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -384,4 +393,5 @@ Partial Class GDNGridDetails
     Friend WithEvents GMTRS As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GLRNO As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GPARTYNAME As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GBILLNO As DevExpress.XtraGrid.Columns.GridColumn
 End Class

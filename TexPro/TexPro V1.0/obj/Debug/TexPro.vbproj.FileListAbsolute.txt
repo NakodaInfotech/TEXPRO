@@ -539,13 +539,11 @@ D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\CrystalDecisions.ReportAppServer.XmlS
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
-D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\FlashControlV71.dll
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\DevExpress.Pdf.v25.1.Drawing.dll
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\DevExpress.Sparkline.v25.1.Core.dll
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\DevExpress.XtraTreeList.v25.1.dll
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\stdole.dll
-D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\ShockwaveFlashObjects.dll
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\BL.pdb
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\BL.xml
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\bin\Debug\DevExpress.Pdf.v25.1.Core.xml
@@ -942,3 +940,4 @@ D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro.vbproj.Up2Date
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.exe
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.xml
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.pdb
+D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.exe.config
