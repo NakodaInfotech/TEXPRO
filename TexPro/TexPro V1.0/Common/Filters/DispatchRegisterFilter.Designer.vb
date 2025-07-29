@@ -50,6 +50,7 @@ Partial Class DispatchRegisterFilter
         Me.CHKGRID = New System.Windows.Forms.CheckBox()
         Me.txtadd = New System.Windows.Forms.TextBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.RBDESIGNBALESUMM = New System.Windows.Forms.RadioButton()
         Me.RBCATEGORYMONTHLY = New System.Windows.Forms.RadioButton()
         Me.RBGRADE = New System.Windows.Forms.RadioButton()
         Me.RBDEPT = New System.Windows.Forms.RadioButton()
@@ -81,7 +82,7 @@ Partial Class DispatchRegisterFilter
         Me.lblvendorname = New System.Windows.Forms.Label()
         Me.cmdshowreport = New System.Windows.Forms.Button()
         Me.cmdexit = New System.Windows.Forms.Button()
-        Me.RBDESIGNBALESUMM = New System.Windows.Forms.RadioButton()
+        Me.RDBSUMMARYWITHBILL = New System.Windows.Forms.RadioButton()
         Me.BlendPanel1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -437,6 +438,7 @@ Partial Class DispatchRegisterFilter
         'GroupBox3
         '
         Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox3.Controls.Add(Me.RDBSUMMARYWITHBILL)
         Me.GroupBox3.Controls.Add(Me.RBDESIGNBALESUMM)
         Me.GroupBox3.Controls.Add(Me.RBCATEGORYMONTHLY)
         Me.GroupBox3.Controls.Add(Me.RBGRADE)
@@ -460,6 +462,16 @@ Partial Class DispatchRegisterFilter
         Me.GroupBox3.TabIndex = 16
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Reports"
+        '
+        'RBDESIGNBALESUMM
+        '
+        Me.RBDESIGNBALESUMM.AutoSize = True
+        Me.RBDESIGNBALESUMM.Location = New System.Drawing.Point(234, 45)
+        Me.RBDESIGNBALESUMM.Name = "RBDESIGNBALESUMM"
+        Me.RBDESIGNBALESUMM.Size = New System.Drawing.Size(174, 18)
+        Me.RBDESIGNBALESUMM.TabIndex = 15
+        Me.RBDESIGNBALESUMM.Text = "Design Wise Bale Summary"
+        Me.RBDESIGNBALESUMM.UseVisualStyleBackColor = True
         '
         'RBCATEGORYMONTHLY
         '
@@ -806,15 +818,15 @@ Partial Class DispatchRegisterFilter
         Me.cmdexit.Text = "E&xit"
         Me.cmdexit.UseVisualStyleBackColor = False
         '
-        'RBDESIGNBALESUMM
+        'RDBSUMMARYWITHBILL
         '
-        Me.RBDESIGNBALESUMM.AutoSize = True
-        Me.RBDESIGNBALESUMM.Location = New System.Drawing.Point(234, 45)
-        Me.RBDESIGNBALESUMM.Name = "RBDESIGNBALESUMM"
-        Me.RBDESIGNBALESUMM.Size = New System.Drawing.Size(174, 18)
-        Me.RBDESIGNBALESUMM.TabIndex = 15
-        Me.RBDESIGNBALESUMM.Text = "Design Wise Bale Summary"
-        Me.RBDESIGNBALESUMM.UseVisualStyleBackColor = True
+        Me.RDBSUMMARYWITHBILL.AutoSize = True
+        Me.RDBSUMMARYWITHBILL.Location = New System.Drawing.Point(28, 117)
+        Me.RDBSUMMARYWITHBILL.Name = "RDBSUMMARYWITHBILL"
+        Me.RDBSUMMARYWITHBILL.Size = New System.Drawing.Size(143, 18)
+        Me.RDBSUMMARYWITHBILL.TabIndex = 16
+        Me.RDBSUMMARYWITHBILL.Text = "Summary With Bill No"
+        Me.RDBSUMMARYWITHBILL.UseVisualStyleBackColor = True
         '
         'DispatchRegisterFilter
         '
@@ -894,4 +906,5 @@ Partial Class DispatchRegisterFilter
     Friend WithEvents RBDEPT As RadioButton
     Friend WithEvents RBCATEGORYMONTHLY As RadioButton
     Friend WithEvents RBDESIGNBALESUMM As RadioButton
+    Friend WithEvents RDBSUMMARYWITHBILL As RadioButton
 End Class

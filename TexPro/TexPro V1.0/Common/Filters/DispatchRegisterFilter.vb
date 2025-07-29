@@ -211,6 +211,8 @@ Public Class DispatchRegisterFilter
                         objwo.FRMSTRING = "DISPATCHAGENTMONTHLY"
                     ElseIf RBAGENTPARTY.Checked = True Then
                         objwo.FRMSTRING = "DISPATCHAGENTMERCHANT"
+                    ElseIf RDBSUMMARYWITHBILL.Checked = True Then
+                        objwo.FRMSTRING = "DISPATCHSUMMARYBILLNO"
                     ElseIf RBAGENTITEM.Checked = True Then
                         objwo.FRMSTRING = "DISPATCHAGENTPARTY"
                     ElseIf RBDESIGNBALE.Checked = True Or RBDESIGNBALESUMM.Checked = True Then

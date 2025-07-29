@@ -40,6 +40,7 @@ Public Class GDNDESIGN
     Dim RPTDISPATCHJOBWISE As New DispatchJobWise
     Dim RPTDISPATCHPROGWISE As New DispatchProgWise
     Dim RPTDISPATCH As New DispatchPartyReport
+    Dim RPTDISPATCHSUMMBILLNO As New DispatchSummBillNoReport
     Dim RPTDISPATCHD As New DispatchPartyDetailReport
     Dim RPTDISPATCHCATEGORY As New DispatchCategoryWiseReport
     Dim RPTDISPATCHCATEGORYMONTHLY As New DispatchCategoryMonthlySummReport
@@ -126,6 +127,8 @@ Public Class GDNDESIGN
                 crTables = RPTGDNAGENTMONTHLY.Database.Tables
             ElseIf FRMSTRING = "DISPATCHAGENTMERCHANT" Then
                 crTables = RPTGDNAGENTMERCHANT.Database.Tables
+            ElseIf FRMSTRING = "DISPATCHSUMMARYBILLNO" Then
+                crTables = RPTDISPATCHSUMMBILLNO.Database.Tables
             ElseIf FRMSTRING = "DISPATCHDESIGNBALE" Then
                 crTables = RPTDISPATCHDESIGNBALE.Database.Tables
             ElseIf FRMSTRING = "DISPATCHDESIGNBALESUMM" Then
@@ -247,6 +250,11 @@ Public Class GDNDESIGN
                 RPTGDNAGENTMERCHANT.DataDefinition.FormulaFields("PERIOD").Text = "'" & period & "'"
                 RPTGDNAGENTMERCHANT.DataDefinition.FormulaFields("TOTALPCS").Text = TOTALPCS
                 RPTGDNAGENTMERCHANT.DataDefinition.FormulaFields("TOTALMTRS").Text = TOTALMTRS
+            ElseIf FRMSTRING = "DISPATCHSUMMARYBILLNO" Then
+                crpo.ReportSource = RPTDISPATCHSUMMBILLNO
+                RPTDISPATCHSUMMBILLNO.DataDefinition.FormulaFields("PERIOD").Text = "'" & period & "'"
+                RPTDISPATCHSUMMBILLNO.DataDefinition.FormulaFields("TOTALPCS").Text = TOTALPCS
+                RPTDISPATCHSUMMBILLNO.DataDefinition.FormulaFields("TOTALMTRS").Text = TOTALMTRS
             ElseIf FRMSTRING = "DISPATCHAGENTPARTY" Then
                 crpo.ReportSource = RPTGDNAGENTPARTY
                 RPTGDNAGENTPARTY.DataDefinition.FormulaFields("PERIOD").Text = "'" & period & "'"
@@ -522,6 +530,12 @@ SKIPINVOICE:
                 expo.ExportFormatType = ExportFormatType.PortableDocFormat
                 expo.DestinationOptions = oDfDopt
                 RPTGDNAGENTMERCHANT.Export()
+            ElseIf FRMSTRING = "DISPATCHSUMMARYBILLNO" Then
+                expo = RPTDISPATCHSUMMBILLNO.ExportOptions
+                expo.ExportDestinationType = ExportDestinationType.DiskFile
+                expo.ExportFormatType = ExportFormatType.PortableDocFormat
+                expo.DestinationOptions = oDfDopt
+                RPTDISPATCHSUMMBILLNO.Export()
             ElseIf FRMSTRING = "DISPATCHAGENTPARTY" Then
                 expo = RPTGDNAGENTPARTY.ExportOptions
                 expo.ExportDestinationType = ExportDestinationType.DiskFile

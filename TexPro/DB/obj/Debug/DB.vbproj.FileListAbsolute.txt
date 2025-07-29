@@ -7,3 +7,13 @@ D:\VSS\VSS\TEXPRO\VSS\TexPro\DB\obj\Debug\DB.vbproj.GenerateResource.Cache
 D:\VSS\VSS\TEXPRO\VSS\TexPro\DB\obj\Debug\DB.dll
 D:\VSS\VSS\TEXPRO\VSS\TexPro\DB\obj\Debug\DB.xml
 D:\VSS\VSS\TEXPRO\VSS\TexPro\DB\obj\Debug\DB.pdb
+D:\GIT\TEXPRO\TexPro\DB\bin\Debug\DB.dll
+D:\GIT\TEXPRO\TexPro\DB\bin\Debug\DB.pdb
+D:\GIT\TEXPRO\TexPro\DB\bin\Debug\DB.xml
+D:\GIT\TEXPRO\TexPro\DB\obj\Debug\DB.vbproj.AssemblyReference.cache
+D:\GIT\TEXPRO\TexPro\DB\obj\Debug\DB.Resources.resources
+D:\GIT\TEXPRO\TexPro\DB\obj\Debug\DB.vbproj.GenerateResource.cache
+D:\GIT\TEXPRO\TexPro\DB\obj\Debug\DB.vbproj.CoreCompileInputs.cache
+D:\GIT\TEXPRO\TexPro\DB\obj\Debug\DB.dll
+D:\GIT\TEXPRO\TexPro\DB\obj\Debug\DB.xml
+D:\GIT\TEXPRO\TexPro\DB\obj\Debug\DB.pdb
