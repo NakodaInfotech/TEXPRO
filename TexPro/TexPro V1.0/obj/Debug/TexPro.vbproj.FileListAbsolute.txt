@@ -940,4 +940,3 @@ D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro.vbproj.Up2Date
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.exe
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.xml
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.pdb
-D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.exe.config
