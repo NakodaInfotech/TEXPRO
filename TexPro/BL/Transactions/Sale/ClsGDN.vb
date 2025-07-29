@@ -161,6 +161,8 @@ Public Class ClsGDN
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@LRNO", alParaval(I)))
                 I = I + 1
+                .Add(New SqlClient.SqlParameter("@BILLNO", alParaval(I)))
+                I = I + 1
                 .Add(New SqlClient.SqlParameter("@PARTYNAME", alParaval(I)))
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@GRIDDONE", alParaval(I)))
@@ -338,6 +340,8 @@ Public Class ClsGDN
                 .Add(New SqlClient.SqlParameter("@wt", alParaval(I)))
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@LRNO", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@BILLNO", alParaval(I)))
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@PARTYNAME", alParaval(I)))
                 I = I + 1
