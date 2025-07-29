@@ -602,7 +602,7 @@ CHECKNEXTLINEMTRS:
                         txtgrandtotal.Text = Val(dr("GRANDTOTAL"))
 
 
-                        gridps.Rows.Add(dr("GRIDSRNO"), dr("PSNO"), dr("FBNO"), dr("PIECETYPE"), dr("MERCHANT"), dr("CUT"), dr("QUALITY"), dr("PCS"), dr("MTRS"), dr("WT"), dr("LRNO"), dr("PARTYNAME"), dr("GRIDDONE"), dr("TYPE"), Val(dr("GDNSONO")), Val(dr("GDNSOSRNO")))
+                        gridps.Rows.Add(dr("GRIDSRNO"), dr("PSNO"), dr("FBNO"), dr("PIECETYPE"), dr("MERCHANT"), dr("CUT"), dr("QUALITY"), dr("PCS"), dr("MTRS"), dr("WT"), dr("LRNO"), dr("BILLNO"), dr("PARTYNAME"), dr("GRIDDONE"), dr("TYPE"), Val(dr("GDNSONO")), Val(dr("GDNSOSRNO")))
                         If Convert.ToBoolean(dr("GRIDDONE")) = True Then
                             gridps.Rows(gridps.RowCount - 1).DefaultCellStyle.BackColor = Color.Yellow
                             lbllocked.Visible = True
@@ -775,6 +775,7 @@ CHECKNEXTLINEMTRS:
             Dim MTRS As String = ""
             Dim wt As String = ""
             Dim LRNO As String = ""
+            Dim BILLNO As String = ""
             Dim PARTYNAME As String = ""
             Dim DONE As String = ""             'WHETHER GRN IS DONE FOR THIS LINE
             Dim TYPE As String = ""
@@ -795,6 +796,7 @@ CHECKNEXTLINEMTRS:
                         MTRS = row.Cells(Gmtrs.Index).Value.ToString
                         wt = row.Cells(GWT.Index).Value.ToString
                         If row.Cells(GLRNO.Index).Value <> Nothing Then LRNO = row.Cells(GLRNO.Index).Value Else LRNO = ""
+                        BILLNO = row.Cells(GBILLNO.Index).Value.ToString
                         PARTYNAME = row.Cells(CMBPARTYNAME.Index).Value.ToString
                         If Convert.ToBoolean(row.Cells(GDONE.Index).Value) = True Then
                             DONE = "1"
@@ -818,6 +820,7 @@ CHECKNEXTLINEMTRS:
                         MTRS = MTRS & "|" & row.Cells(Gmtrs.Index).Value.ToString
                         wt = wt & "|" & row.Cells(GWT.Index).Value.ToString
                         If row.Cells(GLRNO.Index).Value <> Nothing Then LRNO = LRNO & "|" & row.Cells(GLRNO.Index).Value Else LRNO = LRNO & "|" & row.Cells(GLRNO.Index).Value
+                        BILLNO = BILLNO & "|" & row.Cells(GBILLNO.Index).Value.ToString
                         PARTYNAME = PARTYNAME & "|" & row.Cells(CMBPARTYNAME.Index).Value.ToString
                         If Convert.ToBoolean(row.Cells(GDONE.Index).Value) = True Then
                             DONE = DONE & "|" & "1"
@@ -844,6 +847,7 @@ CHECKNEXTLINEMTRS:
             alParaval.Add(MTRS)
             alParaval.Add(wt)
             alParaval.Add(LRNO)
+            alParaval.Add(BILLNO)
             alParaval.Add(PARTYNAME)
             alParaval.Add(DONE)
             alParaval.Add(TYPE)
@@ -1157,7 +1161,7 @@ CHECKNEXTLINEMTRS:
                 'Dim a As String
 
                 For i As Integer = 0 To selectpstable.Rows.Count - 1
-                    gridps.Rows.Add(0, selectpstable.Rows(i).Item("BALENO"), selectpstable.Rows(i).Item("FBNO"), selectpstable.Rows(i).Item("piecetype"), selectpstable.Rows(i).Item("MERCHANT"), selectpstable.Rows(i).Item("cut"), selectpstable.Rows(i).Item("QUALITY"), Val(selectpstable.Rows(i).Item("PCS")), Format(Val(selectpstable.Rows(i).Item("MTRS")), "0.00"), Format(Val(selectpstable.Rows(i).Item("wt")), "0.00"), "", selectpstable.Rows(i).Item("NAME"), 0, selectpstable.Rows(i).Item("TYPE"), 0, 0)
+                    gridps.Rows.Add(0, selectpstable.Rows(i).Item("BALENO"), selectpstable.Rows(i).Item("FBNO"), selectpstable.Rows(i).Item("piecetype"), selectpstable.Rows(i).Item("MERCHANT"), selectpstable.Rows(i).Item("cut"), selectpstable.Rows(i).Item("QUALITY"), Val(selectpstable.Rows(i).Item("PCS")), Format(Val(selectpstable.Rows(i).Item("MTRS")), "0.00"), Format(Val(selectpstable.Rows(i).Item("wt")), "0.00"), "", "", selectpstable.Rows(i).Item("NAME"), 0, selectpstable.Rows(i).Item("TYPE"), 0, 0)
 
                 Next
                 gridps.FirstDisplayedScrollingRowIndex = gridps.RowCount - 1
