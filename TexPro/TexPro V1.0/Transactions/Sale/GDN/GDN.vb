@@ -796,7 +796,8 @@ CHECKNEXTLINEMTRS:
                         MTRS = row.Cells(Gmtrs.Index).Value.ToString
                         wt = row.Cells(GWT.Index).Value.ToString
                         If row.Cells(GLRNO.Index).Value <> Nothing Then LRNO = row.Cells(GLRNO.Index).Value Else LRNO = ""
-                        BILLNO = row.Cells(GBILLNO.Index).Value.ToString
+                        If row.Cells(GBILLNO.Index).Value <> Nothing Then BILLNO = row.Cells(GBILLNO.Index).Value Else BILLNO = ""
+                        'BILLNO = row.Cells(GBILLNO.Index).Value.ToString
                         PARTYNAME = row.Cells(CMBPARTYNAME.Index).Value.ToString
                         If Convert.ToBoolean(row.Cells(GDONE.Index).Value) = True Then
                             DONE = "1"
@@ -820,7 +821,8 @@ CHECKNEXTLINEMTRS:
                         MTRS = MTRS & "|" & row.Cells(Gmtrs.Index).Value.ToString
                         wt = wt & "|" & row.Cells(GWT.Index).Value.ToString
                         If row.Cells(GLRNO.Index).Value <> Nothing Then LRNO = LRNO & "|" & row.Cells(GLRNO.Index).Value Else LRNO = LRNO & "|" & row.Cells(GLRNO.Index).Value
-                        BILLNO = BILLNO & "|" & row.Cells(GBILLNO.Index).Value.ToString
+                        If row.Cells(GBILLNO.Index).Value <> Nothing Then BILLNO = BILLNO & "|" & row.Cells(GBILLNO.Index).Value Else BILLNO = BILLNO & "|" & row.Cells(GBILLNO.Index).Value
+                        'BILLNO = BILLNO & "|" & row.Cells(GBILLNO.Index).Value.ToString
                         PARTYNAME = PARTYNAME & "|" & row.Cells(CMBPARTYNAME.Index).Value.ToString
                         If Convert.ToBoolean(row.Cells(GDONE.Index).Value) = True Then
                             DONE = DONE & "|" & "1"
