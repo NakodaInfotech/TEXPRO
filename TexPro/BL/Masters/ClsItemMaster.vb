@@ -80,6 +80,12 @@ Public Class clsItemmaster
                 I += 1
                 .Add(New SqlClient.SqlParameter("@FOLD", alParaval(I)))
                 I += 1
+                .Add(New SqlClient.SqlParameter("@DYEDSTOCK", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@SHOWINPRGREPORT", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@PRGCATEGORY", alParaval(I)))
+                I += 1
 
             End With
 
@@ -156,6 +162,12 @@ Public Class clsItemmaster
                 .Add(New SqlClient.SqlParameter("@SUBCATEGORY", alParaval(I)))
                 I += 1
                 .Add(New SqlClient.SqlParameter("@FOLD", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@DYEDSTOCK", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@SHOWINPRGREPORT", alParaval(I)))
+                I += 1
+                .Add(New SqlClient.SqlParameter("@PRGCATEGORY", alParaval(I)))
                 I += 1
 
                 .Add(New SqlClient.SqlParameter("@itemid", alParaval(I)))

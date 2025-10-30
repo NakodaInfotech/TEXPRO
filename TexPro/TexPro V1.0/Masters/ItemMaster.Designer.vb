@@ -36,6 +36,12 @@ Partial Class ItemMaster
         Me.gratetype = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.grate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.gpitem = New System.Windows.Forms.GroupBox()
+        Me.CHKSHOWINPRGREPORT = New System.Windows.Forms.CheckBox()
+        Me.CHKDYEDSTOCK = New System.Windows.Forms.CheckBox()
+        Me.CMBFOLD = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.CMBSUBCATEGORY = New System.Windows.Forms.ComboBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.LBLOURQUALITY = New System.Windows.Forms.Label()
         Me.CMBQUALITY = New System.Windows.Forms.ComboBox()
         Me.LBLNAME = New System.Windows.Forms.Label()
@@ -74,10 +80,8 @@ Partial Class ItemMaster
         Me.cmdok = New System.Windows.Forms.Button()
         Me.cmdexit = New System.Windows.Forms.Button()
         Me.Ep = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.CMBSUBCATEGORY = New System.Windows.Forms.ComboBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.CMBFOLD = New System.Windows.Forms.ComboBox()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.CMBPRGCATEGORY = New System.Windows.Forms.ComboBox()
+        Me.LBLPRGCATEGORY = New System.Windows.Forms.Label()
         Me.BlendPanel1.SuspendLayout()
         Me.GPRATE.SuspendLayout()
         CType(Me.GRIDRATE, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -218,6 +222,10 @@ Partial Class ItemMaster
         'gpitem
         '
         Me.gpitem.BackColor = System.Drawing.Color.Transparent
+        Me.gpitem.Controls.Add(Me.CMBPRGCATEGORY)
+        Me.gpitem.Controls.Add(Me.LBLPRGCATEGORY)
+        Me.gpitem.Controls.Add(Me.CHKSHOWINPRGREPORT)
+        Me.gpitem.Controls.Add(Me.CHKDYEDSTOCK)
         Me.gpitem.Controls.Add(Me.CMBFOLD)
         Me.gpitem.Controls.Add(Me.Label10)
         Me.gpitem.Controls.Add(Me.CMBSUBCATEGORY)
@@ -260,6 +268,78 @@ Partial Class ItemMaster
         Me.gpitem.TabIndex = 0
         Me.gpitem.TabStop = False
         Me.gpitem.Text = "Item Details"
+        '
+        'CHKSHOWINPRGREPORT
+        '
+        Me.CHKSHOWINPRGREPORT.AutoSize = True
+        Me.CHKSHOWINPRGREPORT.BackColor = System.Drawing.Color.Transparent
+        Me.CHKSHOWINPRGREPORT.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CHKSHOWINPRGREPORT.Location = New System.Drawing.Point(665, 106)
+        Me.CHKSHOWINPRGREPORT.Name = "CHKSHOWINPRGREPORT"
+        Me.CHKSHOWINPRGREPORT.Size = New System.Drawing.Size(127, 18)
+        Me.CHKSHOWINPRGREPORT.TabIndex = 668
+        Me.CHKSHOWINPRGREPORT.Text = "Show in Prg Report"
+        Me.CHKSHOWINPRGREPORT.UseVisualStyleBackColor = False
+        Me.CHKSHOWINPRGREPORT.Visible = False
+        '
+        'CHKDYEDSTOCK
+        '
+        Me.CHKDYEDSTOCK.AutoSize = True
+        Me.CHKDYEDSTOCK.BackColor = System.Drawing.Color.Transparent
+        Me.CHKDYEDSTOCK.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CHKDYEDSTOCK.Location = New System.Drawing.Point(665, 82)
+        Me.CHKDYEDSTOCK.Name = "CHKDYEDSTOCK"
+        Me.CHKDYEDSTOCK.Size = New System.Drawing.Size(84, 18)
+        Me.CHKDYEDSTOCK.TabIndex = 667
+        Me.CHKDYEDSTOCK.Text = "Dyed Stock"
+        Me.CHKDYEDSTOCK.UseVisualStyleBackColor = False
+        Me.CHKDYEDSTOCK.Visible = False
+        '
+        'CMBFOLD
+        '
+        Me.CMBFOLD.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.CMBFOLD.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.CMBFOLD.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CMBFOLD.FormattingEnabled = True
+        Me.CMBFOLD.Location = New System.Drawing.Point(665, 52)
+        Me.CMBFOLD.MaxDropDownItems = 14
+        Me.CMBFOLD.Name = "CMBFOLD"
+        Me.CMBFOLD.Size = New System.Drawing.Size(183, 22)
+        Me.CMBFOLD.TabIndex = 16
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(632, 56)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(31, 14)
+        Me.Label10.TabIndex = 666
+        Me.Label10.Text = "Fold"
+        '
+        'CMBSUBCATEGORY
+        '
+        Me.CMBSUBCATEGORY.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.CMBSUBCATEGORY.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.CMBSUBCATEGORY.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CMBSUBCATEGORY.FormattingEnabled = True
+        Me.CMBSUBCATEGORY.Location = New System.Drawing.Point(665, 25)
+        Me.CMBSUBCATEGORY.MaxDropDownItems = 14
+        Me.CMBSUBCATEGORY.Name = "CMBSUBCATEGORY"
+        Me.CMBSUBCATEGORY.Size = New System.Drawing.Size(183, 22)
+        Me.CMBSUBCATEGORY.TabIndex = 15
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(587, 29)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(76, 14)
+        Me.Label9.TabIndex = 664
+        Me.Label9.Text = "Sub Category"
         '
         'LBLOURQUALITY
         '
@@ -687,51 +767,30 @@ Partial Class ItemMaster
         Me.Ep.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink
         Me.Ep.ContainerControl = Me
         '
-        'CMBSUBCATEGORY
+        'CMBPRGCATEGORY
         '
-        Me.CMBSUBCATEGORY.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.CMBSUBCATEGORY.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.CMBSUBCATEGORY.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CMBSUBCATEGORY.FormattingEnabled = True
-        Me.CMBSUBCATEGORY.Location = New System.Drawing.Point(665, 25)
-        Me.CMBSUBCATEGORY.MaxDropDownItems = 14
-        Me.CMBSUBCATEGORY.Name = "CMBSUBCATEGORY"
-        Me.CMBSUBCATEGORY.Size = New System.Drawing.Size(183, 22)
-        Me.CMBSUBCATEGORY.TabIndex = 15
+        Me.CMBPRGCATEGORY.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.CMBPRGCATEGORY.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.CMBPRGCATEGORY.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CMBPRGCATEGORY.FormattingEnabled = True
+        Me.CMBPRGCATEGORY.Location = New System.Drawing.Point(665, 129)
+        Me.CMBPRGCATEGORY.MaxDropDownItems = 14
+        Me.CMBPRGCATEGORY.Name = "CMBPRGCATEGORY"
+        Me.CMBPRGCATEGORY.Size = New System.Drawing.Size(183, 22)
+        Me.CMBPRGCATEGORY.TabIndex = 669
+        Me.CMBPRGCATEGORY.Visible = False
         '
-        'Label9
+        'LBLPRGCATEGORY
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(587, 29)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(76, 14)
-        Me.Label9.TabIndex = 664
-        Me.Label9.Text = "Sub Category"
-        '
-        'CMBFOLD
-        '
-        Me.CMBFOLD.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.CMBFOLD.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.CMBFOLD.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CMBFOLD.FormattingEnabled = True
-        Me.CMBFOLD.Location = New System.Drawing.Point(665, 52)
-        Me.CMBFOLD.MaxDropDownItems = 14
-        Me.CMBFOLD.Name = "CMBFOLD"
-        Me.CMBFOLD.Size = New System.Drawing.Size(183, 22)
-        Me.CMBFOLD.TabIndex = 16
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(632, 56)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(31, 14)
-        Me.Label10.TabIndex = 666
-        Me.Label10.Text = "Fold"
+        Me.LBLPRGCATEGORY.AutoSize = True
+        Me.LBLPRGCATEGORY.BackColor = System.Drawing.Color.Transparent
+        Me.LBLPRGCATEGORY.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLPRGCATEGORY.Location = New System.Drawing.Point(591, 133)
+        Me.LBLPRGCATEGORY.Name = "LBLPRGCATEGORY"
+        Me.LBLPRGCATEGORY.Size = New System.Drawing.Size(72, 14)
+        Me.LBLPRGCATEGORY.TabIndex = 670
+        Me.LBLPRGCATEGORY.Text = "Prg Category"
+        Me.LBLPRGCATEGORY.Visible = False
         '
         'ItemMaster
         '
@@ -807,4 +866,8 @@ Partial Class ItemMaster
     Friend WithEvents Label10 As Label
     Friend WithEvents CMBSUBCATEGORY As ComboBox
     Friend WithEvents Label9 As Label
+    Friend WithEvents CHKSHOWINPRGREPORT As CheckBox
+    Friend WithEvents CHKDYEDSTOCK As CheckBox
+    Friend WithEvents CMBPRGCATEGORY As ComboBox
+    Friend WithEvents LBLPRGCATEGORY As Label
 End Class

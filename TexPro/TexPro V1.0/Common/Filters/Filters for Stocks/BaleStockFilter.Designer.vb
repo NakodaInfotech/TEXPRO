@@ -23,6 +23,10 @@ Partial Class BaleStockFilter
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.BlendPanel1 = New VbPowerPack.BlendPanel()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.CLB_FOLD = New System.Windows.Forms.CheckedListBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.CLB_SUBCATEGORY = New System.Windows.Forms.CheckedListBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.CLB_CATEGORY = New System.Windows.Forms.CheckedListBox()
         Me.CMBCATEGORY = New System.Windows.Forms.ComboBox()
@@ -76,10 +80,8 @@ Partial Class BaleStockFilter
         Me.cmdshowreport = New System.Windows.Forms.Button()
         Me.cmdexit = New System.Windows.Forms.Button()
         Me.lblheading = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.CLB_SUBCATEGORY = New System.Windows.Forms.CheckedListBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.CLB_FOLD = New System.Windows.Forms.CheckedListBox()
+        Me.CHKOPSTOCK = New System.Windows.Forms.CheckBox()
+        Me.CHKDYEDSTOCK = New System.Windows.Forms.CheckBox()
         Me.BlendPanel1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -88,6 +90,8 @@ Partial Class BaleStockFilter
         'BlendPanel1
         '
         Me.BlendPanel1.Blend = New VbPowerPack.BlendFill(VbPowerPack.BlendStyle.Vertical, System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(248, Byte), Integer)), System.Drawing.SystemColors.Window)
+        Me.BlendPanel1.Controls.Add(Me.CHKDYEDSTOCK)
+        Me.BlendPanel1.Controls.Add(Me.CHKOPSTOCK)
         Me.BlendPanel1.Controls.Add(Me.Label13)
         Me.BlendPanel1.Controls.Add(Me.CLB_FOLD)
         Me.BlendPanel1.Controls.Add(Me.Label12)
@@ -132,6 +136,52 @@ Partial Class BaleStockFilter
         Me.BlendPanel1.Name = "BlendPanel1"
         Me.BlendPanel1.Size = New System.Drawing.Size(880, 561)
         Me.BlendPanel1.TabIndex = 0
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.Black
+        Me.Label13.Location = New System.Drawing.Point(400, 216)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(31, 14)
+        Me.Label13.TabIndex = 763
+        Me.Label13.Text = "Fold"
+        '
+        'CLB_FOLD
+        '
+        Me.CLB_FOLD.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.CLB_FOLD.FormattingEnabled = True
+        Me.CLB_FOLD.Location = New System.Drawing.Point(432, 212)
+        Me.CLB_FOLD.Name = "CLB_FOLD"
+        Me.CLB_FOLD.ScrollAlwaysVisible = True
+        Me.CLB_FOLD.Size = New System.Drawing.Size(159, 72)
+        Me.CLB_FOLD.TabIndex = 762
+        Me.CLB_FOLD.TabStop = False
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
+        Me.Label12.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.Black
+        Me.Label12.Location = New System.Drawing.Point(601, 138)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(76, 14)
+        Me.Label12.TabIndex = 761
+        Me.Label12.Text = "Sub Category"
+        '
+        'CLB_SUBCATEGORY
+        '
+        Me.CLB_SUBCATEGORY.Font = New System.Drawing.Font("Calibri", 9.0!)
+        Me.CLB_SUBCATEGORY.FormattingEnabled = True
+        Me.CLB_SUBCATEGORY.Location = New System.Drawing.Point(681, 134)
+        Me.CLB_SUBCATEGORY.Name = "CLB_SUBCATEGORY"
+        Me.CLB_SUBCATEGORY.ScrollAlwaysVisible = True
+        Me.CLB_SUBCATEGORY.Size = New System.Drawing.Size(159, 72)
+        Me.CLB_SUBCATEGORY.TabIndex = 760
+        Me.CLB_SUBCATEGORY.TabStop = False
         '
         'Label2
         '
@@ -753,51 +803,31 @@ Partial Class BaleStockFilter
         Me.lblheading.TabIndex = 315
         Me.lblheading.Text = "Bale Stock Register"
         '
-        'Label12
+        'CHKOPSTOCK
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.Transparent
-        Me.Label12.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(601, 138)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(76, 14)
-        Me.Label12.TabIndex = 761
-        Me.Label12.Text = "Sub Category"
+        Me.CHKOPSTOCK.AutoSize = True
+        Me.CHKOPSTOCK.BackColor = System.Drawing.Color.Transparent
+        Me.CHKOPSTOCK.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CHKOPSTOCK.ForeColor = System.Drawing.Color.Black
+        Me.CHKOPSTOCK.Location = New System.Drawing.Point(681, 216)
+        Me.CHKOPSTOCK.Name = "CHKOPSTOCK"
+        Me.CHKOPSTOCK.Size = New System.Drawing.Size(98, 18)
+        Me.CHKOPSTOCK.TabIndex = 764
+        Me.CHKOPSTOCK.Text = "Only OP Stock"
+        Me.CHKOPSTOCK.UseVisualStyleBackColor = False
         '
-        'CLB_SUBCATEGORY
+        'CHKDYEDSTOCK
         '
-        Me.CLB_SUBCATEGORY.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.CLB_SUBCATEGORY.FormattingEnabled = True
-        Me.CLB_SUBCATEGORY.Location = New System.Drawing.Point(681, 134)
-        Me.CLB_SUBCATEGORY.Name = "CLB_SUBCATEGORY"
-        Me.CLB_SUBCATEGORY.ScrollAlwaysVisible = True
-        Me.CLB_SUBCATEGORY.Size = New System.Drawing.Size(159, 72)
-        Me.CLB_SUBCATEGORY.TabIndex = 760
-        Me.CLB_SUBCATEGORY.TabStop = False
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.Transparent
-        Me.Label13.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.Black
-        Me.Label13.Location = New System.Drawing.Point(400, 216)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(31, 14)
-        Me.Label13.TabIndex = 763
-        Me.Label13.Text = "Fold"
-        '
-        'CLB_FOLD
-        '
-        Me.CLB_FOLD.Font = New System.Drawing.Font("Calibri", 9.0!)
-        Me.CLB_FOLD.FormattingEnabled = True
-        Me.CLB_FOLD.Location = New System.Drawing.Point(432, 212)
-        Me.CLB_FOLD.Name = "CLB_FOLD"
-        Me.CLB_FOLD.ScrollAlwaysVisible = True
-        Me.CLB_FOLD.Size = New System.Drawing.Size(159, 72)
-        Me.CLB_FOLD.TabIndex = 762
-        Me.CLB_FOLD.TabStop = False
+        Me.CHKDYEDSTOCK.AutoSize = True
+        Me.CHKDYEDSTOCK.BackColor = System.Drawing.Color.Transparent
+        Me.CHKDYEDSTOCK.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CHKDYEDSTOCK.ForeColor = System.Drawing.Color.Black
+        Me.CHKDYEDSTOCK.Location = New System.Drawing.Point(681, 236)
+        Me.CHKDYEDSTOCK.Name = "CHKDYEDSTOCK"
+        Me.CHKDYEDSTOCK.Size = New System.Drawing.Size(111, 18)
+        Me.CHKDYEDSTOCK.TabIndex = 765
+        Me.CHKDYEDSTOCK.Text = "Only Dyed Stock"
+        Me.CHKDYEDSTOCK.UseVisualStyleBackColor = False
         '
         'BaleStockFilter
         '
@@ -877,4 +907,6 @@ Partial Class BaleStockFilter
     Friend WithEvents CLB_SUBCATEGORY As CheckedListBox
     Friend WithEvents Label13 As Label
     Friend WithEvents CLB_FOLD As CheckedListBox
+    Friend WithEvents CHKDYEDSTOCK As CheckBox
+    Friend WithEvents CHKOPSTOCK As CheckBox
 End Class

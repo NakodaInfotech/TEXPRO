@@ -1,6 +1,7 @@
 ﻿
 Imports BL
 Imports System.Windows.Forms
+
 Public Class ProgramMaster
 
     'following two variables is only for used in edit mode....
@@ -8,13 +9,13 @@ Public Class ProgramMaster
     Dim gridDoubleClick As Boolean
     Dim tempRow As Integer
 
-    Public edit As Boolean
+    Public EDIT As Boolean
     Public TEMPPRGNO As String
-    Public tempMsg As Integer
 
-    Private Sub cmdexit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdexit.Click
+    Private Sub cmdexit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CMDEXIT.Click
         Me.Close()
     End Sub
+
     Private Sub cmbname_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbname.Enter
         Try
             If cmbname.Text.Trim = "" Then fillname(cmbname, edit, " AND (GROUPMASTER.GROUP_SECONDARY = 'SUNDRY CREDITORS' or GROUPMASTER.GROUP_SECONDARY = 'SUNDRY DEBTORS')")
@@ -30,6 +31,7 @@ Public Class ProgramMaster
             Throw ex
         End Try
     End Sub
+
     Private Sub cmbdyeingno_Enter(ByVal sender As Object, ByVal e As System.EventArgs) Handles CMBDYEINGNO.Enter
         Try
             If CMBDYEINGNO.Text.Trim = "" Then filldyeing(CMBDYEINGNO)
@@ -46,23 +48,28 @@ Public Class ProgramMaster
         End Try
     End Sub
 
-
-
-
     Sub clear()
 
+        EP.Clear()
         tstxtbillno.Clear()
 
-        prgdate.Value = Mydate
+        TXTPRGNO.ReadOnly = False
+        CMBPRGTYPE.SelectedIndex = 0
+        PRGDATE.Value = Mydate
+        CMBMERCHANT.Text = ""
+        TXTPCS.Clear()
+        TXTREMARKS.Clear()
+        getmax_PRG_no() 'this function is for to get max value from the Purchase PRGuisition table
 
-        EP.Clear()
+
+
         txtsrno.Clear()
         CMBDYEINGNO.Text = ""
 
         txtqty.Clear()
 
         CMBDYEINGNO.Text = ""
-        cmbquality.Text = ""
+        CMBMERCHANT.Text = ""
         txtorderno.Clear()
         cmbprocess.Text = "DYEING"
 
@@ -74,9 +81,6 @@ Public Class ProgramMaster
         gridDoubleClick = False
 
 
-
-        getmax_PRG_no() 'this function is for to get max value from the Purchase PRGuisition table
-
         If gridPrg.RowCount > 0 Then
             txtsrno.Text = Val(gridPrg.Rows(gridPrg.RowCount - 1).Cells(gsrno.Index).Value) + 1
         Else
@@ -84,6 +88,7 @@ Public Class ProgramMaster
         End If
 
     End Sub
+
     Private Sub CMBPROCESS_GotFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbprocess.GotFocus
         Try
             If cmbprocess.Text.Trim = "" Then FILLPROCESS(cmbprocess, " AND PROCESSMASTER.PROCESS_TYPE='MFG'", False)
@@ -91,11 +96,12 @@ Public Class ProgramMaster
             If ErrHandle(ex.Message.GetHashCode) = False Then Throw ex
         End Try
     End Sub
+
     Sub getmax_PRG_no()
         Dim DTTABLE As New DataTable
-        DTTABLE = getmax(" isnull(max(PRG_no),0) + 1 ", "PRGMaster", " AND PRG_cmpid=" & CmpId & " and PRG_LOCATIONID=" & Locationid & " and PRG_YEARID=" & YearId)
+        DTTABLE = getmax(" isnull(max(PRG_no),0) + 1 ", "PRGMASTER", " and PRG_YEARID=" & YearId)
         If DTTABLE.Rows.Count > 0 Then
-            txtprgno.Text = DTTABLE.Rows(0).Item(0)
+            TXTPRGNO.Text = DTTABLE.Rows(0).Item(0)
         End If
     End Sub
 
@@ -108,6 +114,7 @@ Public Class ProgramMaster
             If ErrHandle(ex.Message.GetHashCode) = False Then Throw ex
         End Try
     End Sub
+
     Private Sub CMBPROCESS_Validated(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbprocess.Validated
         Try
             If cmbprocess.Text.Trim <> "" Then cmbprocess.Enabled = False
@@ -115,6 +122,7 @@ Public Class ProgramMaster
             Throw ex
         End Try
     End Sub
+
     Sub fillgrid()
         gridPrg.Enabled = True
         If gridDoubleClick = False Then
@@ -170,12 +178,12 @@ Public Class ProgramMaster
         End If
     End Sub
 
-    Private Sub cmdclear_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdclear.Click
+    Private Sub cmdclear_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CMDCLEAR.Click
         clear()
         edit = False
     End Sub
 
-    Private Sub cmdok_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdok.Click
+    Private Sub cmdok_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CMDOK.Click
         Dim IntResult As Integer
         Try
             Cursor.Current = Cursors.WaitCursor
@@ -187,10 +195,16 @@ Public Class ProgramMaster
 
             Dim alParaval As New ArrayList
 
+            alParaval.Add(Val(TXTPRGNO.Text.Trim))
+            alParaval.Add(CMBPRGTYPE.Text.Trim)
+            alParaval.Add(PRGDATE.Value)
+            alParaval.Add(CMBMERCHANT.Text.Trim)
+            alParaval.Add(Val(TXTPCS.Text.Trim))
+            alParaval.Add(TXTREMARKS.Text.Trim)
+
             alParaval.Add(cmbprocess.Text.Trim)
-            alParaval.Add(prgdate.Value)
             alParaval.Add(txtorderno.Text.Trim)
-            alParaval.Add(cmbquality.Text.Trim)
+            alParaval.Add(CMBMERCHANT.Text.Trim)
             alParaval.Add(cmbname.Text.Trim)
 
             alParaval.Add(lbltotalqty.Text.Trim)
@@ -206,7 +220,7 @@ Public Class ProgramMaster
             Dim qty As String = ""
             Dim READYQTY As String = ""
             Dim DONE As String = ""
-  
+
 
             For Each row As Windows.Forms.DataGridViewRow In gridPrg.Rows
                 If row.Cells(gsrno.Index).Value <> Nothing Then
@@ -244,7 +258,7 @@ Public Class ProgramMaster
             alParaval.Add(qty)
             alParaval.Add(READYQTY)
             alParaval.Add(DONE)
-          
+
 
             Dim objclsPRG As New ClsPRG
             objclsPRG.alParaval = alParaval
@@ -254,7 +268,7 @@ Public Class ProgramMaster
                     MsgBox("Insufficient Rights")
                     Exit Sub
                 End If
-                IntResult = objclsPRG.save()
+                IntResult = objclsPRG.SAVE()
                 MessageBox.Show("Details Added")
             Else
                 alParaval.Add(TEMPPRGNO)
@@ -262,7 +276,7 @@ Public Class ProgramMaster
                     MsgBox("Insufficient Rights")
                     Exit Sub
                 End If
-                IntResult = objclsPRG.Update()
+                IntResult = objclsPRG.UPDATE()
                 MsgBox("Details Updated")
             End If
             edit = False
@@ -290,23 +304,23 @@ Public Class ProgramMaster
     Private Function errorvalid() As Boolean
         Dim bln As Boolean = True
 
-        If cmbname.Text.Trim.Length = 0 Then
-            EP.SetError(cmbname, "Enter PRG. by")
+
+        If Val(TXTPRGNO.Text.Trim) = 0 Then
+            EP.SetError(TXTPRGNO, "Enter Program No")
             bln = False
         End If
 
-      
-
-        If gridPrg.RowCount = 0 Then
-            EP.SetError(txtqty, "Enter Item Details")
+        If CMBMERCHANT.Text.Trim.Length = 0 Then
+            EP.SetError(cmbname, "Enter Merchant")
             bln = False
         End If
 
-      
+        If Val(TXTPCS.Text.Trim) = 0 Then
+            EP.SetError(TXTPCS, "Enter Pcs")
+            bln = False
+        End If
 
-    
-
-        If Not datecheck(prgdate.Value) Then bln = False
+        If Not datecheck(PRGDATE.Value) Then bln = False
         Return bln
     End Function
 
@@ -328,12 +342,6 @@ Public Class ProgramMaster
         End If
     End Sub
 
-    Private Sub PurchasePRGuisition_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Me.KeyPress
-        If AscW(e.KeyChar) <> 33 Then
-            chkchange.CheckState = CheckState.Checked
-        End If
-    End Sub
-
     Private Sub PRGmaster_load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
             Cursor.Current = Cursors.WaitCursor
@@ -348,12 +356,12 @@ Public Class ProgramMaster
 
 
             filldyeing(CMBDYEINGNO)
-            fillQUALITY(cmbquality, edit)
+            If CMBMERCHANT.Text.Trim = "" Then fillitemname(CMBMERCHANT, " AND ITEMMASTER.ITEM_FRMSTRING = 'MERCHANT' AND ITEMMASTER.ITEM_SHOWINPRGREPORT = 'TRUE' ")
             If cmbprocess.Text.Trim = "" Then FILLPROCESS(cmbprocess, " AND PROCESSMASTER.PROCESS_TYPE='MFG'", False)
 
             clear()
 
-            If edit = True Then
+            If EDIT = True Then
 
                 If USEREDIT = False And USERVIEW = False Then
                     MsgBox("Insufficient Rights")
@@ -371,31 +379,17 @@ Public Class ProgramMaster
                 Dim dt As DataTable = objclsPRG.selectPRG()
 
                 If dt.Rows.Count > 0 Then
-                    For Each dr As DataRow In dt.Rows
 
-                        txtprgno.Text = TEMPPRGNO
-                        prgdate.Value = Convert.ToDateTime(dr("PRGDATE"))
-                        cmbname.Text = Convert.ToString(dr("NAME"))
-                        cmbquality.Text = Convert.ToString(dr("QUALITY"))
-                        cmbprocess.Text = Convert.ToString(dr("PROCESS"))
-                        txtorderno.Text = Convert.ToString(dr("ORDERNO"))
-                        gridPrg.Rows.Add(dr("gridsrno").ToString, dr("dyeingno").ToString, dr("QTY").ToString, dr("READYQTY").ToString, dr("DONE").ToString)
+                    TXTPRGNO.Text = TEMPPRGNO
+                    TXTPRGNO.ReadOnly = True
+                    CMBPRGTYPE.Text = dt.Rows(0).Item("PRGTYPE")
+                    PRGDATE.Value = Convert.ToDateTime(dt.Rows(0).Item("PRGDATE"))
+                    CMBMERCHANT.Text = dt.Rows(0).Item("MERCHANT")
+                    TXTPCS.Text = Val(dt.Rows(0).Item("PCS"))
+                    TXTREMARKS.Text = dt.Rows(0).Item("REMARKS")
 
-                    Next
-                    gridPrg.FirstDisplayedScrollingRowIndex = gridPrg.RowCount - 1
                 End If
-
-                chkchange.CheckState = CheckState.Checked
-                qtytotal()
             End If
-
-            'If gridDoubleClick = False Then
-            If gridPrg.RowCount > 0 Then
-                txtsrno.Text = Val(gridPrg.Rows(gridPrg.RowCount - 1).Cells(gsrno.Index).Value) + 1
-            Else
-                txtsrno.Text = 1
-            End If
-            'End If
         Catch ex As Exception
             If ErrHandle(ex.Message.GetHashCode) = False Then Throw ex
         Finally
@@ -418,7 +412,7 @@ Public Class ProgramMaster
         numdot(e, txtqty, Me)
     End Sub
 
-    Private Sub cmddelete_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmddelete.Click
+    Private Sub cmddelete_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CMDDELETE.Click
         Try
             If USERDELETE = False Then
                 MsgBox("Insufficient Rights")
@@ -456,19 +450,16 @@ Public Class ProgramMaster
                 MsgBox("Insufficient Rights")
                 Exit Sub
             End If
-
             Dim objprdetails As New ProgramDetails
             objprdetails.MdiParent = MDIMain
             objprdetails.Show()
-            objprdetails.BringToFront()
-            Me.Close()
         Catch ex As Exception
             If ErrHandle(ex.Message.GetHashCode) = False Then Throw ex
         End Try
     End Sub
 
     Private Sub toolprevious_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles toolprevious.Click
-        TEMPPRGNO = Val(txtprgno.Text) - 1
+        TEMPPRGNO = Val(TXTPRGNO.Text) - 1
         clear()
         If TEMPPRGNO > 0 Then
             edit = True
@@ -480,10 +471,10 @@ Public Class ProgramMaster
     End Sub
 
     Private Sub toolnext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles toolnext.Click
-        TEMPPRGNO = Val(txtprgno.Text) + 1
+        TEMPPRGNO = Val(TXTPRGNO.Text) + 1
         getmax_PRG_no()
         clear()
-        If Val(txtprgno.Text) - 1 >= TEMPPRGNO Then
+        If Val(TXTPRGNO.Text) - 1 >= TEMPPRGNO Then
             edit = True
             PRGmaster_load(sender, e)
         Else
@@ -500,13 +491,12 @@ Public Class ProgramMaster
         Call cmddelete_Click(sender, e)
     End Sub
 
-    Private Sub PRGdate_Validating(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles prgdate.Validating
-        If Not datecheck(prgdate.Value) Then
+    Private Sub PRGdate_Validating(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles PRGDATE.Validating
+        If Not datecheck(PRGDATE.Value) Then
             MsgBox("Date Not in Current Accounting Year")
             e.Cancel = True
         End If
     End Sub
-
 
     Private Sub gridpurchasePRG_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles gridPrg.KeyDown
         Try
@@ -544,9 +534,7 @@ Public Class ProgramMaster
         End If
     End Sub
 
-
-
-    Private Sub PrintToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PrintToolStripButton.Click
+    Private Sub PrintToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Try
             If edit = True Then
                 'Dim OBJGN As New PRGDesign
@@ -560,8 +548,6 @@ Public Class ProgramMaster
         End Try
     End Sub
 
-  
-    
     Private Sub txtqty_Validated(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtqty.Validated
         Try
             If CMBDYEINGNO.Text.Trim <> "" And Val(txtqty.Text.Trim) > 0 Then
@@ -570,6 +556,22 @@ Public Class ProgramMaster
             End If
         Catch ex As Exception
             Throw ex
+        End Try
+    End Sub
+
+    Private Sub CMBMERCHANT_Enter(sender As Object, e As EventArgs) Handles CMBMERCHANT.Enter
+        Try
+            If CMBMERCHANT.Text.Trim = "" Then fillitemname(CMBMERCHANT, " AND ITEMMASTER.ITEM_FRMSTRING = 'MERCHANT'  AND ITEMMASTER.ITEM_SHOWINPRGREPORT = 'TRUE' ")
+        Catch ex As Exception
+            If ErrHandle(ex.Message.GetHashCode) = False Then Throw ex
+        End Try
+    End Sub
+
+    Private Sub CMBMERCHANT_Validating(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles CMBMERCHANT.Validating
+        Try
+            If CMBMERCHANT.Text.Trim <> "" Then itemvalidate(CMBMERCHANT, e, Me, " AND ITEMMASTER.ITEM_FRMSTRING = 'MERCHANT'", "MERCHANT")
+        Catch ex As Exception
+            If ErrHandle(ex.Message.GetHashCode) = False Then Throw ex
         End Try
     End Sub
 End Class

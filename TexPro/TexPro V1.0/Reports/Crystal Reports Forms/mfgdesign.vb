@@ -105,6 +105,7 @@ Public Class mfgdesign
     'CONTRACTORBILL
     Dim RPTCONTRACTORBILL As New ContractorBillReport
 
+    Dim RPTPROGRAM As New ProgramReport
 
 
     Dim rptDYEING As New DyeingReport
@@ -148,6 +149,9 @@ Public Class mfgdesign
             ElseIf frmstring = "PARTYLOTSTATUS" Then
                 crTables = RPTLOTSTATUS.Database.Tables
 
+
+            ElseIf frmstring = "PRGREPORT" Then
+                crTables = RPTPROGRAM.Database.Tables
 
 
             ElseIf frmstring = "MFG2" Then
@@ -286,6 +290,10 @@ Public Class mfgdesign
                 crpo.ReportSource = RPTLOTSTATUS
                 RPTLOTSTATUS.DataDefinition.FormulaFields("TITLE").Text = "'" & PARTYNAME & "'"
                 RPTLOTSTATUS.DataDefinition.FormulaFields("PERIOD").Text = "'" & PERIOD & "'"
+
+
+            ElseIf frmstring = "PRGREPORT" Then
+                crpo.ReportSource = RPTPROGRAM
 
 
             ElseIf frmstring = "MFG2" Then
@@ -531,6 +539,14 @@ Public Class mfgdesign
                 expo.ExportFormatType = ExportFormatType.PortableDocFormat
                 expo.DestinationOptions = oDfDopt
                 RPTLOTSTATUS.Export()
+
+
+            ElseIf frmstring = "PRGREPORT" Then
+                expo = RPTPROGRAM.ExportOptions
+                expo.ExportDestinationType = ExportDestinationType.DiskFile
+                expo.ExportFormatType = ExportFormatType.PortableDocFormat
+                expo.DestinationOptions = oDfDopt
+                RPTPROGRAM.Export()
 
 
             ElseIf frmstring = "MFG2" Then

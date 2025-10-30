@@ -19,17 +19,30 @@ Public Class ClsPRG
 
 #Region "Functions"
 
-    Public Function save() As Integer
+    Public Function SAVE() As Integer
         Dim intResult As Integer
         Try
             'save purchase REQUEST
-            Dim strCommand As String = "SP_MASTER_PRGMaster_SAVE"
+            Dim strCommand As String = "SP_MASTER_PRGMASTER_SAVE"
             Dim alParameter As New ArrayList
             With alParameter
                 Dim I As Integer = 0
-                .Add(New SqlClient.SqlParameter("@PROCESS", alParaval(I)))
+
+                .Add(New SqlClient.SqlParameter("@PROGRAMNO", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@PRGTYPE", alParaval(I)))
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@date", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@MERCHANT", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@PCS", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@REMARKS", alParaval(I)))
+                I = I + 1
+
+
+                .Add(New SqlClient.SqlParameter("@PROCESS", alParaval(I)))
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@ORDERNO", alParaval(I)))
                 I = I + 1
@@ -60,7 +73,7 @@ Public Class ClsPRG
                 .Add(New SqlClient.SqlParameter("@READYQTY", alParaval(I)))
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@CLOSED", alParaval(I)))
-
+                I = I + 1
 
             End With
 
@@ -73,17 +86,31 @@ Public Class ClsPRG
 
     End Function
 
-    Public Function Update() As Integer
+    Public Function UPDATE() As Integer
         Dim intResult As Integer
         Try
             'Update purchase order
-            Dim strCommand As String = "SP_MASTER_PRGMaster_UPDATE"
+            Dim strCommand As String = "SP_MASTER_PRGMASTER_UPDATE"
             Dim alParameter As New ArrayList
             With alParameter
+
                 Dim I As Integer = 0
-                .Add(New SqlClient.SqlParameter("@PROCESS", alParaval(I)))
+
+                .Add(New SqlClient.SqlParameter("@PROGRAMNO", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@PRGTYPE", alParaval(I)))
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@date", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@MERCHANT", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@PCS", alParaval(I)))
+                I = I + 1
+                .Add(New SqlClient.SqlParameter("@REMARKS", alParaval(I)))
+                I = I + 1
+
+
+                .Add(New SqlClient.SqlParameter("@PROCESS", alParaval(I)))
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@ORDERNO", alParaval(I)))
                 I = I + 1

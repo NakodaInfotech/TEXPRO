@@ -111,6 +111,14 @@ Partial Class MDIMain
         Me.PROCESSTYPEADD = New System.Windows.Forms.ToolStripMenuItem()
         Me.PROCESSTYPEEDIT = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator215 = New System.Windows.Forms.ToolStripSeparator()
+        Me.SUBCATEGORY_MASTER = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SUBCATEGORYADD = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SUBCATEGORYEDIT = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator81 = New System.Windows.Forms.ToolStripSeparator()
+        Me.FOLD_MASTER = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FOLDADD = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FOLDEDIT = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator87 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripSeparator60 = New System.Windows.Forms.ToolStripSeparator()
         Me.DEPARTMENT_MASTER = New System.Windows.Forms.ToolStripMenuItem()
         Me.DEPARTMENTADD = New System.Windows.Forms.ToolStripMenuItem()
@@ -551,6 +559,7 @@ Partial Class MDIMain
         Me.ProductionFilterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.JobPackingFilterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FinalPackingFilterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NKTPPROGRAM_MENU = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator154 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripSeparator78 = New System.Windows.Forms.ToolStripSeparator()
         Me.MANUALMATCHING_MASTER = New System.Windows.Forms.ToolStripMenuItem()
@@ -717,14 +726,6 @@ Partial Class MDIMain
         Me.DESIGNREGISTERTOOLSTRIP = New System.Windows.Forms.ToolStripSeparator()
         Me.XtraTabbedMdiManager1 = New DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(Me.components)
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
-        Me.SUBCATEGORY_MASTER = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FOLD_MASTER = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SUBCATEGORYADD = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SUBCATEGORYEDIT = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator81 = New System.Windows.Forms.ToolStripSeparator()
-        Me.FOLDADD = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FOLDEDIT = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator87 = New System.Windows.Forms.ToolStripSeparator()
         Me.MenuStrip.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.XtraTabbedMdiManager1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1290,6 +1291,60 @@ Partial Class MDIMain
         '
         Me.ToolStripSeparator215.Name = "ToolStripSeparator215"
         Me.ToolStripSeparator215.Size = New System.Drawing.Size(207, 6)
+        '
+        'SUBCATEGORY_MASTER
+        '
+        Me.SUBCATEGORY_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SUBCATEGORYADD, Me.SUBCATEGORYEDIT, Me.ToolStripSeparator81})
+        Me.SUBCATEGORY_MASTER.Enabled = False
+        Me.SUBCATEGORY_MASTER.Name = "SUBCATEGORY_MASTER"
+        Me.SUBCATEGORY_MASTER.Size = New System.Drawing.Size(208, 22)
+        Me.SUBCATEGORY_MASTER.Text = "Sub Category Master"
+        '
+        'SUBCATEGORYADD
+        '
+        Me.SUBCATEGORYADD.Enabled = False
+        Me.SUBCATEGORYADD.Name = "SUBCATEGORYADD"
+        Me.SUBCATEGORYADD.Size = New System.Drawing.Size(211, 22)
+        Me.SUBCATEGORYADD.Text = "&Add New Sub Category"
+        '
+        'SUBCATEGORYEDIT
+        '
+        Me.SUBCATEGORYEDIT.Enabled = False
+        Me.SUBCATEGORYEDIT.Name = "SUBCATEGORYEDIT"
+        Me.SUBCATEGORYEDIT.Size = New System.Drawing.Size(211, 22)
+        Me.SUBCATEGORYEDIT.Text = "&Edit Existing Sub Category"
+        '
+        'ToolStripSeparator81
+        '
+        Me.ToolStripSeparator81.Name = "ToolStripSeparator81"
+        Me.ToolStripSeparator81.Size = New System.Drawing.Size(208, 6)
+        '
+        'FOLD_MASTER
+        '
+        Me.FOLD_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FOLDADD, Me.FOLDEDIT, Me.ToolStripSeparator87})
+        Me.FOLD_MASTER.Enabled = False
+        Me.FOLD_MASTER.Name = "FOLD_MASTER"
+        Me.FOLD_MASTER.Size = New System.Drawing.Size(208, 22)
+        Me.FOLD_MASTER.Text = "Fold Master"
+        '
+        'FOLDADD
+        '
+        Me.FOLDADD.Enabled = False
+        Me.FOLDADD.Name = "FOLDADD"
+        Me.FOLDADD.Size = New System.Drawing.Size(166, 22)
+        Me.FOLDADD.Text = "&Add New Fold"
+        '
+        'FOLDEDIT
+        '
+        Me.FOLDEDIT.Enabled = False
+        Me.FOLDEDIT.Name = "FOLDEDIT"
+        Me.FOLDEDIT.Size = New System.Drawing.Size(166, 22)
+        Me.FOLDEDIT.Text = "&Edit Existing Fold"
+        '
+        'ToolStripSeparator87
+        '
+        Me.ToolStripSeparator87.Name = "ToolStripSeparator87"
+        Me.ToolStripSeparator87.Size = New System.Drawing.Size(163, 6)
         '
         'ToolStripSeparator60
         '
@@ -4033,7 +4088,7 @@ Partial Class MDIMain
         '
         'MFG_REPORTS
         '
-        Me.MFG_REPORTS.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MfgBeforeCuttingRegisterToolStripMenuItem, Me.WhiteFoldingStockToolStripMenuItem, Me.MfgAfterCuttingRegisterToolStripMenuItem, Me.MfgLooseRegisterToolStripMenuItem, Me.JobOutStockToolStripMenuItem1, Me.ToolStripSeparator158, Me.ProductionFilterToolStripMenuItem, Me.JobPackingFilterToolStripMenuItem, Me.FinalPackingFilterToolStripMenuItem, Me.ToolStripSeparator154})
+        Me.MFG_REPORTS.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MfgBeforeCuttingRegisterToolStripMenuItem, Me.WhiteFoldingStockToolStripMenuItem, Me.MfgAfterCuttingRegisterToolStripMenuItem, Me.MfgLooseRegisterToolStripMenuItem, Me.JobOutStockToolStripMenuItem1, Me.ToolStripSeparator158, Me.ProductionFilterToolStripMenuItem, Me.JobPackingFilterToolStripMenuItem, Me.FinalPackingFilterToolStripMenuItem, Me.NKTPPROGRAM_MENU, Me.ToolStripSeparator154})
         Me.MFG_REPORTS.Name = "MFG_REPORTS"
         Me.MFG_REPORTS.Size = New System.Drawing.Size(198, 22)
         Me.MFG_REPORTS.Text = "Production"
@@ -4091,6 +4146,13 @@ Partial Class MDIMain
         Me.FinalPackingFilterToolStripMenuItem.Name = "FinalPackingFilterToolStripMenuItem"
         Me.FinalPackingFilterToolStripMenuItem.Size = New System.Drawing.Size(264, 22)
         Me.FinalPackingFilterToolStripMenuItem.Text = "Final Packing Filter"
+        '
+        'NKTPPROGRAM_MENU
+        '
+        Me.NKTPPROGRAM_MENU.Name = "NKTPPROGRAM_MENU"
+        Me.NKTPPROGRAM_MENU.Size = New System.Drawing.Size(264, 22)
+        Me.NKTPPROGRAM_MENU.Text = "NKTP Program Filter"
+        Me.NKTPPROGRAM_MENU.Visible = False
         '
         'ToolStripSeparator154
         '
@@ -5164,60 +5226,6 @@ Partial Class MDIMain
         '
         Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Money Twins"
         '
-        'SUBCATEGORY_MASTER
-        '
-        Me.SUBCATEGORY_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SUBCATEGORYADD, Me.SUBCATEGORYEDIT, Me.ToolStripSeparator81})
-        Me.SUBCATEGORY_MASTER.Enabled = False
-        Me.SUBCATEGORY_MASTER.Name = "SUBCATEGORY_MASTER"
-        Me.SUBCATEGORY_MASTER.Size = New System.Drawing.Size(208, 22)
-        Me.SUBCATEGORY_MASTER.Text = "Sub Category Master"
-        '
-        'FOLD_MASTER
-        '
-        Me.FOLD_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FOLDADD, Me.FOLDEDIT, Me.ToolStripSeparator87})
-        Me.FOLD_MASTER.Enabled = False
-        Me.FOLD_MASTER.Name = "FOLD_MASTER"
-        Me.FOLD_MASTER.Size = New System.Drawing.Size(208, 22)
-        Me.FOLD_MASTER.Text = "Fold Master"
-        '
-        'SUBCATEGORYADD
-        '
-        Me.SUBCATEGORYADD.Enabled = False
-        Me.SUBCATEGORYADD.Name = "SUBCATEGORYADD"
-        Me.SUBCATEGORYADD.Size = New System.Drawing.Size(211, 22)
-        Me.SUBCATEGORYADD.Text = "&Add New Sub Category"
-        '
-        'SUBCATEGORYEDIT
-        '
-        Me.SUBCATEGORYEDIT.Enabled = False
-        Me.SUBCATEGORYEDIT.Name = "SUBCATEGORYEDIT"
-        Me.SUBCATEGORYEDIT.Size = New System.Drawing.Size(211, 22)
-        Me.SUBCATEGORYEDIT.Text = "&Edit Existing Sub Category"
-        '
-        'ToolStripSeparator81
-        '
-        Me.ToolStripSeparator81.Name = "ToolStripSeparator81"
-        Me.ToolStripSeparator81.Size = New System.Drawing.Size(208, 6)
-        '
-        'FOLDADD
-        '
-        Me.FOLDADD.Enabled = False
-        Me.FOLDADD.Name = "FOLDADD"
-        Me.FOLDADD.Size = New System.Drawing.Size(166, 22)
-        Me.FOLDADD.Text = "&Add New Fold"
-        '
-        'FOLDEDIT
-        '
-        Me.FOLDEDIT.Enabled = False
-        Me.FOLDEDIT.Name = "FOLDEDIT"
-        Me.FOLDEDIT.Size = New System.Drawing.Size(166, 22)
-        Me.FOLDEDIT.Text = "&Edit Existing Fold"
-        '
-        'ToolStripSeparator87
-        '
-        Me.ToolStripSeparator87.Name = "ToolStripSeparator87"
-        Me.ToolStripSeparator87.Size = New System.Drawing.Size(163, 6)
-        '
         'MDIMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -5946,4 +5954,5 @@ Partial Class MDIMain
     Friend WithEvents FOLDADD As ToolStripMenuItem
     Friend WithEvents FOLDEDIT As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator87 As ToolStripSeparator
+    Friend WithEvents NKTPPROGRAM_MENU As ToolStripMenuItem
 End Class

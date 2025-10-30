@@ -4769,6 +4769,8 @@ SKIPLINE:
                 DESIGNREG_TOOL.Visible = False
                 DESIGNREGISTERTOOLSTRIP.Visible = False
             End If
+
+            If ClientName = "TULSI" Then NKTPPROGRAM_MENU.Visible = True
         Catch ex As Exception
             Throw ex
         End Try
@@ -5066,6 +5068,16 @@ SKIPLINE:
             objCategoryDetails.MdiParent = Me
             objCategoryDetails.frmstring = "FOLD"
             objCategoryDetails.Show()
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
+
+    Private Sub NKTPPROGRAM_MENU_Click(sender As Object, e As EventArgs) Handles NKTPPROGRAM_MENU.Click
+        Try
+            Dim OBJPRG As New ProgramFilter
+            OBJPRG.MdiParent = Me
+            OBJPRG.Show()
         Catch ex As Exception
             Throw ex
         End Try

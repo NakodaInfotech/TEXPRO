@@ -1223,6 +1223,9 @@ CHECKNEXTLINEMTRS:
             ElseIf e.KeyCode = Keys.F9 And gridps.CurrentRow.Index > 0 Then
                 If gridps.Item(GLRNO.Index, gridps.CurrentRow.Index - 1).Value <> "" Then gridps.Item(GLRNO.Index, gridps.CurrentRow.Index).Value = gridps.Item(GLRNO.Index, gridps.CurrentRow.Index - 1).Value
 
+            ElseIf e.KeyCode = Keys.F8 And gridps.CurrentRow.Index > 0 Then
+                If gridps.Item(GBILLNO.Index, gridps.CurrentRow.Index - 1).Value <> "" Then gridps.Item(GBILLNO.Index, gridps.CurrentRow.Index).Value = gridps.Item(GBILLNO.Index, gridps.CurrentRow.Index - 1).Value
+
             End If
         Catch ex As Exception
             If ErrHandle(ex.Message.GetHashCode) = False Then Throw ex

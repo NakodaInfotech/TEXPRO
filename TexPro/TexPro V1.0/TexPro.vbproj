@@ -358,6 +358,12 @@
     <Compile Include="Common\Filters\PriceListFilter.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Common\Filters\ProgramFilter.Designer.vb">
+      <DependentUpon>ProgramFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Filters\ProgramFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Common\Filters\PurchaseInvoiceFilter.Designer.vb">
       <DependentUpon>PurchaseInvoiceFilter.vb</DependentUpon>
     </Compile>
@@ -1092,6 +1098,12 @@
     </Compile>
     <Compile Include="Reports\Crystal Reports\Lot\LotwiseReport.vb">
       <DependentUpon>LotwiseReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\Crystal Reports\mgf\ProgramReport.vb">
+      <DependentUpon>ProgramReport.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
@@ -4695,6 +4707,9 @@
     <EmbeddedResource Include="Common\Filters\PriceListFilter.resx">
       <DependentUpon>PriceListFilter.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Common\Filters\ProgramFilter.resx">
+      <DependentUpon>ProgramFilter.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Common\Filters\PurchaseInvoiceFilter.resx">
       <DependentUpon>PurchaseInvoiceFilter.vb</DependentUpon>
     </EmbeddedResource>
@@ -5133,6 +5148,10 @@
     <EmbeddedResource Include="Reports\Crystal Reports\Lot\LotwiseReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>LotwiseReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Crystal Reports\mgf\ProgramReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProgramReport.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Crystal Reports\mgf\Costing Reports\MFG2COSTMERCHANTSCREENREPORT.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

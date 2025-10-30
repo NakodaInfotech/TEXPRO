@@ -52,6 +52,7 @@ Partial Class MfgDetails
         Me.GDEGREE = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GREMARKS = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GCONTRACTOR = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GMODIFIEDBY = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.cmdexit = New System.Windows.Forms.Button()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
@@ -67,7 +68,6 @@ Partial Class MfgDetails
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.lbl = New System.Windows.Forms.Label()
         Me.cmdok = New System.Windows.Forms.Button()
-        Me.GMODIFIEDBY = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.BlendPanel1.SuspendLayout()
         CType(Me.gridbilldetails, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridbill, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -356,6 +356,15 @@ Partial Class MfgDetails
         Me.GCONTRACTOR.VisibleIndex = 19
         Me.GCONTRACTOR.Width = 120
         '
+        'GMODIFIEDBY
+        '
+        Me.GMODIFIEDBY.Caption = "Modified By"
+        Me.GMODIFIEDBY.FieldName = "MODIFIEDBY"
+        Me.GMODIFIEDBY.Name = "GMODIFIEDBY"
+        Me.GMODIFIEDBY.Visible = True
+        Me.GMODIFIEDBY.VisibleIndex = 20
+        Me.GMODIFIEDBY.Width = 100
+        '
         'cmdexit
         '
         Me.cmdexit.BackColor = System.Drawing.Color.Transparent
@@ -437,6 +446,7 @@ Partial Class MfgDetails
         '
         'TXTLOTNO
         '
+        Me.TXTLOTNO.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.TXTLOTNO.Name = "TXTLOTNO"
         Me.TXTLOTNO.Size = New System.Drawing.Size(75, 25)
         '
@@ -481,15 +491,6 @@ Partial Class MfgDetails
         Me.cmdok.TabIndex = 3
         Me.cmdok.Text = "&Ok"
         Me.cmdok.UseVisualStyleBackColor = False
-        '
-        'GMODIFIEDBY
-        '
-        Me.GMODIFIEDBY.Caption = "Modified By"
-        Me.GMODIFIEDBY.FieldName = "MODIFIEDBY"
-        Me.GMODIFIEDBY.Name = "GMODIFIEDBY"
-        Me.GMODIFIEDBY.Visible = True
-        Me.GMODIFIEDBY.VisibleIndex = 20
-        Me.GMODIFIEDBY.Width = 100
         '
         'MfgDetails
         '

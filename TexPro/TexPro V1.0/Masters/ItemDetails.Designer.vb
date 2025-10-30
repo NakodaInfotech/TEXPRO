@@ -37,6 +37,8 @@ Partial Class ItemDetails
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.Details = New System.Windows.Forms.TabPage()
         Me.BlendPanel2 = New VbPowerPack.BlendPanel()
+        Me.CHKSHOWINPRGREPORT = New System.Windows.Forms.CheckBox()
+        Me.CHKDYEDSTOCK = New System.Windows.Forms.CheckBox()
         Me.TXTHSNCODE = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GPRATE = New System.Windows.Forms.GroupBox()
@@ -94,7 +96,7 @@ Partial Class ItemDetails
         Me.BlendPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BlendPanel1.Location = New System.Drawing.Point(0, 0)
         Me.BlendPanel1.Name = "BlendPanel1"
-        Me.BlendPanel1.Size = New System.Drawing.Size(984, 586)
+        Me.BlendPanel1.Size = New System.Drawing.Size(1037, 586)
         Me.BlendPanel1.TabIndex = 1
         '
         'GRIDNAME
@@ -204,7 +206,7 @@ Partial Class ItemDetails
         Me.TabControl1.Location = New System.Drawing.Point(521, 32)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(451, 513)
+        Me.TabControl1.Size = New System.Drawing.Size(516, 513)
         Me.TabControl1.TabIndex = 239
         '
         'Details
@@ -214,7 +216,7 @@ Partial Class ItemDetails
         Me.Details.Location = New System.Drawing.Point(4, 23)
         Me.Details.Name = "Details"
         Me.Details.Padding = New System.Windows.Forms.Padding(3)
-        Me.Details.Size = New System.Drawing.Size(443, 486)
+        Me.Details.Size = New System.Drawing.Size(508, 486)
         Me.Details.TabIndex = 0
         Me.Details.Text = "Item Details"
         Me.Details.UseVisualStyleBackColor = True
@@ -222,6 +224,8 @@ Partial Class ItemDetails
         'BlendPanel2
         '
         Me.BlendPanel2.Blend = New VbPowerPack.BlendFill(VbPowerPack.BlendStyle.Vertical, System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer)), System.Drawing.SystemColors.Window)
+        Me.BlendPanel2.Controls.Add(Me.CHKSHOWINPRGREPORT)
+        Me.BlendPanel2.Controls.Add(Me.CHKDYEDSTOCK)
         Me.BlendPanel2.Controls.Add(Me.TXTHSNCODE)
         Me.BlendPanel2.Controls.Add(Me.Label5)
         Me.BlendPanel2.Controls.Add(Me.GPRATE)
@@ -251,8 +255,34 @@ Partial Class ItemDetails
         Me.BlendPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BlendPanel2.Location = New System.Drawing.Point(3, 3)
         Me.BlendPanel2.Name = "BlendPanel2"
-        Me.BlendPanel2.Size = New System.Drawing.Size(437, 480)
+        Me.BlendPanel2.Size = New System.Drawing.Size(502, 480)
         Me.BlendPanel2.TabIndex = 0
+        '
+        'CHKSHOWINPRGREPORT
+        '
+        Me.CHKSHOWINPRGREPORT.AutoSize = True
+        Me.CHKSHOWINPRGREPORT.BackColor = System.Drawing.Color.Transparent
+        Me.CHKSHOWINPRGREPORT.Enabled = False
+        Me.CHKSHOWINPRGREPORT.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CHKSHOWINPRGREPORT.Location = New System.Drawing.Point(353, 39)
+        Me.CHKSHOWINPRGREPORT.Name = "CHKSHOWINPRGREPORT"
+        Me.CHKSHOWINPRGREPORT.Size = New System.Drawing.Size(127, 18)
+        Me.CHKSHOWINPRGREPORT.TabIndex = 670
+        Me.CHKSHOWINPRGREPORT.Text = "Show in Prg Report"
+        Me.CHKSHOWINPRGREPORT.UseVisualStyleBackColor = False
+        '
+        'CHKDYEDSTOCK
+        '
+        Me.CHKDYEDSTOCK.AutoSize = True
+        Me.CHKDYEDSTOCK.BackColor = System.Drawing.Color.Transparent
+        Me.CHKDYEDSTOCK.Enabled = False
+        Me.CHKDYEDSTOCK.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CHKDYEDSTOCK.Location = New System.Drawing.Point(353, 15)
+        Me.CHKDYEDSTOCK.Name = "CHKDYEDSTOCK"
+        Me.CHKDYEDSTOCK.Size = New System.Drawing.Size(84, 18)
+        Me.CHKDYEDSTOCK.TabIndex = 669
+        Me.CHKDYEDSTOCK.Text = "Dyed Stock"
+        Me.CHKDYEDSTOCK.UseVisualStyleBackColor = False
         '
         'TXTHSNCODE
         '
@@ -648,7 +678,7 @@ Partial Class ItemDetails
         'ItemDetails
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.ClientSize = New System.Drawing.Size(984, 586)
+        Me.ClientSize = New System.Drawing.Size(1037, 586)
         Me.Controls.Add(Me.BlendPanel1)
         Me.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.KeyPreview = True
@@ -714,4 +744,6 @@ Partial Class ItemDetails
     Private WithEvents GRIDNAME As DevExpress.XtraGrid.GridControl
     Private WithEvents gridledger As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents GNAME As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents CHKSHOWINPRGREPORT As CheckBox
+    Friend WithEvents CHKDYEDSTOCK As CheckBox
 End Class

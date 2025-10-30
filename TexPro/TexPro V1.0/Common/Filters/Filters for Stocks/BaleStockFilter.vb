@@ -134,6 +134,8 @@ Public Class BaleStockFilter
             If TXTBALENO.Text.Trim <> "" Then objwo.SELFORMULA = objwo.SELFORMULA & " and {BALESTOCK_VIEW.BALENO}=" & TXTBALENO.Text
             If cmbname.Text.Trim <> "" Then objwo.SELFORMULA = objwo.SELFORMULA & " and {BALESTOCK_VIEW.name}='" & cmbname.Text & "'"
             If cmbratetype.Text.Trim <> "" Then objwo.SELFORMULA = objwo.SELFORMULA & " and {BALESTOCK_VIEW.name}='" & cmbname.Text & "'"
+            If CHKOPSTOCK.Checked = True Then objwo.SELFORMULA = objwo.SELFORMULA & " and {BALESTOCK_VIEW.DYEDSTOCK}=FALSE"
+            If CHKDYEDSTOCK.Checked = True Then objwo.SELFORMULA = objwo.SELFORMULA & " and {BALESTOCK_VIEW.DYEDSTOCK}=TRUE"
 
             Dim CHECKED_GRADE As CheckedListBox.CheckedItemCollection = CLB_GRADE.CheckedItems
             Dim PIECETYPE As String = ""

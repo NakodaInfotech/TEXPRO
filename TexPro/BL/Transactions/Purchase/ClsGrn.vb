@@ -215,6 +215,9 @@ Public Class ClsGrn
                 .Add(New SqlClient.SqlParameter("@ORDERRATE", alParaval(I)))
                 I = I + 1
 
+                .Add(New SqlClient.SqlParameter("@GREYPRGNO", alParaval(I)))
+                I = I + 1
+
             End With
 
             DTTABLE = objDBOperation.execute(strCommand, alParameter).Tables(0)
@@ -419,6 +422,9 @@ Public Class ClsGrn
                 .Add(New SqlClient.SqlParameter("@ORDERGRNMTRS", alParaval(I)))
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@ORDERRATE", alParaval(I)))
+                I = I + 1
+
+                .Add(New SqlClient.SqlParameter("@GREYPRGNO", alParaval(I)))
                 I = I + 1
 
                 .Add(New SqlClient.SqlParameter("@GRNNO", alParaval(I)))
