@@ -215,8 +215,7 @@ Public Class ClsGrn
                 .Add(New SqlClient.SqlParameter("@ORDERRATE", alParaval(I)))
                 I = I + 1
 
-                .Add(New SqlClient.SqlParameter("@GREYPRGNO", alParaval(I)))
-                I = I + 1
+
 
             End With
 
@@ -424,8 +423,7 @@ Public Class ClsGrn
                 .Add(New SqlClient.SqlParameter("@ORDERRATE", alParaval(I)))
                 I = I + 1
 
-                .Add(New SqlClient.SqlParameter("@GREYPRGNO", alParaval(I)))
-                I = I + 1
+
 
                 .Add(New SqlClient.SqlParameter("@GRNNO", alParaval(I)))
                 I = I + 1
