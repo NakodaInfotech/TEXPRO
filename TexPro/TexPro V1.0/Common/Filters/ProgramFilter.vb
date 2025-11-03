@@ -43,6 +43,7 @@ Public Class ProgramFilter
             OBJMFG.selfor_po = "{PRGREPORTVIEW.YEARID} = " & YearId
             OBJMFG.MdiParent = MDIMain
 
+LINESELECTALL:
             'FOR ITEMNAME
             GRIDBILLITEM.ClearColumnsFilter()
             For i As Integer = 0 To GRIDBILLITEM.RowCount - 1
@@ -55,9 +56,13 @@ Public Class ProgramFilter
                     End If
                 End If
             Next
+
             If ITEMCLAUSE <> "" Then
                 ITEMCLAUSE = ITEMCLAUSE & ")"
                 OBJMFG.selfor_po = OBJMFG.selfor_po & ITEMCLAUSE
+            Else
+                CHKSELECTITEM.Checked = True
+                GoTo LINESELECTALL
             End If
 
             If CMBPRGCATEGORY.Text <> "" Then OBJMFG.selfor_po = OBJMFG.selfor_po & " and {PRGREPORTVIEW.PRGCATEGORY}='" & CMBPRGCATEGORY.Text.Trim & "'"
@@ -71,6 +76,17 @@ Public Class ProgramFilter
     Private Sub cmdexit_Click(sender As Object, e As EventArgs) Handles cmdexit.Click
         Try
             Me.Close()
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Sub
+
+    Private Sub CHKSELECTITEM_CheckedChanged(sender As Object, e As EventArgs) Handles CHKSELECTITEM.CheckedChanged
+        Try
+            For i As Integer = 0 To GRIDBILLITEM.RowCount - 1
+                Dim dtrow As DataRow = GRIDBILLITEM.GetDataRow(i)
+                dtrow("CHK") = CHKSELECTITEM.Checked
+            Next
         Catch ex As Exception
             Throw ex
         End Try
