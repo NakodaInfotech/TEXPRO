@@ -594,6 +594,7 @@ D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.LoanFilter.resources
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.OutstandingFilter.resources
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.POFilter.resources
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.PriceListFilter.resources
+D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.ProgramFilter.resources
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.PurchaseInvoiceFilter.resources
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.AnalyticalFilterDispatch.resources
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.SaleInvoiceFilter.resources
@@ -940,5 +941,3 @@ D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro.vbproj.Up2Date
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.exe
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.xml
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.pdb
-D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.exe.config
-D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.ProgramFilter.resources

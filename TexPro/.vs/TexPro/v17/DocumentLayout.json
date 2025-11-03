@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GIT\\TEXPRO\\TexPro\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\common\\filters\\filters for stocks\\balestockfilter.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\common\\filters\\filters for stocks\\balestockfilter.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,19 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BaleStockFilter.vb",
-              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Common\\Filters\\Filters for Stocks\\BaleStockFilter.vb",
-              "RelativeDocumentMoniker": "TexPro V1.0\\Common\\Filters\\Filters for Stocks\\BaleStockFilter.vb",
-              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Common\\Filters\\Filters for Stocks\\BaleStockFilter.vb*",
-              "RelativeToolTip": "TexPro V1.0\\Common\\Filters\\Filters for Stocks\\BaleStockFilter.vb*",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAIkAAAB3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-30T14:26:01.765Z",
-              "EditorCaption": ""
             }
           ]
         }
