@@ -23,6 +23,8 @@ Partial Class UpdateJobMerchant
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.BlendPanel1 = New VbPowerPack.BlendPanel()
+        Me.CMBQUALITYRATE = New System.Windows.Forms.ComboBox()
+        Me.LBLNEWQUALITYRATE = New System.Windows.Forms.Label()
         Me.TXTLOTNO = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -35,8 +37,6 @@ Partial Class UpdateJobMerchant
         Me.lblgroup = New System.Windows.Forms.Label()
         Me.cmdcancel = New System.Windows.Forms.Button()
         Me.CMDUPDATE = New System.Windows.Forms.Button()
-        Me.CMBQUALITYRATE = New System.Windows.Forms.ComboBox()
-        Me.LBLNEWQUALITYRATE = New System.Windows.Forms.Label()
         Me.BlendPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -62,6 +62,33 @@ Partial Class UpdateJobMerchant
         Me.BlendPanel1.Name = "BlendPanel1"
         Me.BlendPanel1.Size = New System.Drawing.Size(484, 221)
         Me.BlendPanel1.TabIndex = 0
+        '
+        'CMBQUALITYRATE
+        '
+        Me.CMBQUALITYRATE.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.CMBQUALITYRATE.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.CMBQUALITYRATE.BackColor = System.Drawing.Color.LemonChiffon
+        Me.CMBQUALITYRATE.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CMBQUALITYRATE.FormattingEnabled = True
+        Me.CMBQUALITYRATE.Location = New System.Drawing.Point(162, 131)
+        Me.CMBQUALITYRATE.MaxDropDownItems = 14
+        Me.CMBQUALITYRATE.Name = "CMBQUALITYRATE"
+        Me.CMBQUALITYRATE.Size = New System.Drawing.Size(231, 22)
+        Me.CMBQUALITYRATE.TabIndex = 215
+        Me.CMBQUALITYRATE.Visible = False
+        '
+        'LBLNEWQUALITYRATE
+        '
+        Me.LBLNEWQUALITYRATE.AutoSize = True
+        Me.LBLNEWQUALITYRATE.BackColor = System.Drawing.Color.Transparent
+        Me.LBLNEWQUALITYRATE.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLNEWQUALITYRATE.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LBLNEWQUALITYRATE.Location = New System.Drawing.Point(63, 135)
+        Me.LBLNEWQUALITYRATE.Name = "LBLNEWQUALITYRATE"
+        Me.LBLNEWQUALITYRATE.Size = New System.Drawing.Size(101, 15)
+        Me.LBLNEWQUALITYRATE.TabIndex = 216
+        Me.LBLNEWQUALITYRATE.Text = "New Quality Rate"
+        Me.LBLNEWQUALITYRATE.Visible = False
         '
         'TXTLOTNO
         '
@@ -106,7 +133,7 @@ Partial Class UpdateJobMerchant
         Me.CMBTYPE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CMBTYPE.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CMBTYPE.FormattingEnabled = True
-        Me.CMBTYPE.Items.AddRange(New Object() {"CUTTING", "MFG", "FINALPACKING", "GRN AND PACKING"})
+        Me.CMBTYPE.Items.AddRange(New Object() {"CUTTING", "MFG", "FINALPACKING", "GRN AND PACKING", "JOBBALE"})
         Me.CMBTYPE.Location = New System.Drawing.Point(162, 17)
         Me.CMBTYPE.MaxDropDownItems = 14
         Me.CMBTYPE.Name = "CMBTYPE"
@@ -146,7 +173,7 @@ Partial Class UpdateJobMerchant
         Me.LBLMERCHANT.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.LBLMERCHANT.Location = New System.Drawing.Point(47, 78)
         Me.LBLMERCHANT.Name = "LBLMERCHANT"
-        Me.LBLMERCHANT.Size = New System.Drawing.Size(113, 15)
+        Me.LBLMERCHANT.Size = New System.Drawing.Size(117, 15)
         Me.LBLMERCHANT.TabIndex = 209
         Me.LBLMERCHANT.Text = "Old Merchant Name"
         '
@@ -158,7 +185,7 @@ Partial Class UpdateJobMerchant
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(43, 107)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(117, 15)
+        Me.Label4.Size = New System.Drawing.Size(120, 15)
         Me.Label4.TabIndex = 207
         Me.Label4.Text = "New Merchant Name"
         '
@@ -214,33 +241,6 @@ Partial Class UpdateJobMerchant
         Me.CMDUPDATE.Text = "&Update"
         Me.CMDUPDATE.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage
         Me.CMDUPDATE.UseVisualStyleBackColor = False
-        '
-        'CMBQUALITYRATE
-        '
-        Me.CMBQUALITYRATE.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.CMBQUALITYRATE.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.CMBQUALITYRATE.BackColor = System.Drawing.Color.LemonChiffon
-        Me.CMBQUALITYRATE.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CMBQUALITYRATE.FormattingEnabled = True
-        Me.CMBQUALITYRATE.Location = New System.Drawing.Point(162, 131)
-        Me.CMBQUALITYRATE.MaxDropDownItems = 14
-        Me.CMBQUALITYRATE.Name = "CMBQUALITYRATE"
-        Me.CMBQUALITYRATE.Size = New System.Drawing.Size(231, 22)
-        Me.CMBQUALITYRATE.TabIndex = 215
-        Me.CMBQUALITYRATE.Visible = False
-        '
-        'LBLNEWQUALITYRATE
-        '
-        Me.LBLNEWQUALITYRATE.AutoSize = True
-        Me.LBLNEWQUALITYRATE.BackColor = System.Drawing.Color.Transparent
-        Me.LBLNEWQUALITYRATE.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLNEWQUALITYRATE.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.LBLNEWQUALITYRATE.Location = New System.Drawing.Point(63, 135)
-        Me.LBLNEWQUALITYRATE.Name = "LBLNEWQUALITYRATE"
-        Me.LBLNEWQUALITYRATE.Size = New System.Drawing.Size(97, 15)
-        Me.LBLNEWQUALITYRATE.TabIndex = 216
-        Me.LBLNEWQUALITYRATE.Text = "New Quality Rate"
-        Me.LBLNEWQUALITYRATE.Visible = False
         '
         'UpdateJobMerchant
         '
