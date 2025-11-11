@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GIT\\TEXPRO\\TexPro\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\masters\\programmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\masters\\programmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\masters\\programmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\masters\\programmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\masters\\itemmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\masters\\itemmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\masters\\itemmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\masters\\itemmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11ABB8BA-29FE-4725-9B0F-E65FE8F28215}|BL\\BL.vbproj|d:\\git\\texpro\\texpro\\bl\\masters\\clsprg.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{11ABB8BA-29FE-4725-9B0F-E65FE8F28215}|BL\\BL.vbproj|solutionrelative:bl\\masters\\clsprg.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +30,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ItemMaster.vb",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ItemMaster.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Masters\\ItemMaster.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ItemMaster.vb",
+              "RelativeToolTip": "TexPro V1.0\\Masters\\ItemMaster.vb",
+              "ViewState": "AgIAAMUBAAAAAAAAAAAhwNQBAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T12:32:07.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemMaster.vb [Design]",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ItemMaster.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Masters\\ItemMaster.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ItemMaster.vb [Design]",
+              "RelativeToolTip": "TexPro V1.0\\Masters\\ItemMaster.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T12:31:58.104Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClsPRG.vb",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\BL\\Masters\\ClsPRG.vb",
+              "RelativeDocumentMoniker": "BL\\Masters\\ClsPRG.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\BL\\Masters\\ClsPRG.vb",
+              "RelativeToolTip": "BL\\Masters\\ClsPRG.vb",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAwwAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T10:24:36.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProgramMaster.vb",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ProgramMaster.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Masters\\ProgramMaster.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ProgramMaster.vb",
+              "RelativeToolTip": "TexPro V1.0\\Masters\\ProgramMaster.vb",
+              "ViewState": "AgIAAI4BAAAAAAAAAAAowJ4BAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T10:19:52.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProgramMaster.vb [Design]",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ProgramMaster.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Masters\\ProgramMaster.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ProgramMaster.vb [Design]",
+              "RelativeToolTip": "TexPro V1.0\\Masters\\ProgramMaster.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T10:19:09.721Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

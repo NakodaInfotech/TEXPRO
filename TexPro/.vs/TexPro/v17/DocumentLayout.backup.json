@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\GIT\\TEXPRO\\TexPro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\reports\\crystal reports\\mgf\\programreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
-      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\reports\\crystal reports\\mgf\\programreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\masters\\programmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\masters\\programmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\utilities\\update forms\\updatejobmerchant.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\utilities\\update forms\\updatejobmerchant.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\masters\\programmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\masters\\programmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\utilities\\update forms\\updatejobmerchant.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\utilities\\update forms\\updatejobmerchant.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\masters\\itemmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\masters\\itemmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\masters\\itemmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\masters\\itemmaster.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11ABB8BA-29FE-4725-9B0F-E65FE8F28215}|BL\\BL.vbproj|d:\\git\\texpro\\texpro\\bl\\masters\\clsprg.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{11ABB8BA-29FE-4725-9B0F-E65FE8F28215}|BL\\BL.vbproj|solutionrelative:bl\\masters\\clsprg.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +30,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ItemMaster.vb",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ItemMaster.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Masters\\ItemMaster.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ItemMaster.vb",
+              "RelativeToolTip": "TexPro V1.0\\Masters\\ItemMaster.vb",
+              "ViewState": "AgIAAMUBAAAAAAAAAAAhwNQBAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T12:32:07.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemMaster.vb [Design]",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ItemMaster.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Masters\\ItemMaster.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ItemMaster.vb [Design]",
+              "RelativeToolTip": "TexPro V1.0\\Masters\\ItemMaster.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T12:31:58.104Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClsPRG.vb",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\BL\\Masters\\ClsPRG.vb",
+              "RelativeDocumentMoniker": "BL\\Masters\\ClsPRG.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\BL\\Masters\\ClsPRG.vb",
+              "RelativeToolTip": "BL\\Masters\\ClsPRG.vb",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAwwAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T10:24:36.816Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProgramReport.rpt",
-              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Reports\\Crystal Reports\\mgf\\ProgramReport.rpt",
-              "RelativeDocumentMoniker": "TexPro V1.0\\Reports\\Crystal Reports\\mgf\\ProgramReport.rpt",
-              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Reports\\Crystal Reports\\mgf\\ProgramReport.rpt",
-              "RelativeToolTip": "TexPro V1.0\\Reports\\Crystal Reports\\mgf\\ProgramReport.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
-              "WhenOpened": "2025-11-04T09:55:08.465Z",
+              "Title": "ProgramMaster.vb",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ProgramMaster.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Masters\\ProgramMaster.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ProgramMaster.vb",
+              "RelativeToolTip": "TexPro V1.0\\Masters\\ProgramMaster.vb",
+              "ViewState": "AgIAAJMBAAAAAAAAAAASwJ4BAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-11T10:19:52.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UpdateJobMerchant.vb",
-              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Utilities\\Update Forms\\UpdateJobMerchant.vb",
-              "RelativeDocumentMoniker": "TexPro V1.0\\Utilities\\Update Forms\\UpdateJobMerchant.vb",
-              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Utilities\\Update Forms\\UpdateJobMerchant.vb",
-              "RelativeToolTip": "TexPro V1.0\\Utilities\\Update Forms\\UpdateJobMerchant.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Title": "ProgramMaster.vb [Design]",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ProgramMaster.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Masters\\ProgramMaster.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Masters\\ProgramMaster.vb [Design]",
+              "RelativeToolTip": "TexPro V1.0\\Masters\\ProgramMaster.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-04T09:29:54.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateJobMerchant.vb [Design]",
-              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Utilities\\Update Forms\\UpdateJobMerchant.vb",
-              "RelativeDocumentMoniker": "TexPro V1.0\\Utilities\\Update Forms\\UpdateJobMerchant.vb",
-              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Utilities\\Update Forms\\UpdateJobMerchant.vb [Design]",
-              "RelativeToolTip": "TexPro V1.0\\Utilities\\Update Forms\\UpdateJobMerchant.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-04T09:29:21.81Z",
+              "WhenOpened": "2025-11-11T10:19:09.721Z",
               "EditorCaption": " [Design]"
             }
           ]
