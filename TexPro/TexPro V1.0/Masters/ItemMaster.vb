@@ -786,7 +786,7 @@ Public Class ItemMaster
 
     Private Sub CMBPRGCATEGORY_Enter(sender As Object, e As EventArgs) Handles CMBPRGCATEGORY.Enter
         Try
-            If CMBPRGCATEGORY.Text.Trim = "" Then FILLSUBCATEGORY(CMBPRGCATEGORY, edit)
+            If CMBPRGCATEGORY.Text.Trim = "" Then fillCATEGORY(CMBPRGCATEGORY, edit)
         Catch ex As Exception
             If ErrHandle(ex.Message.GetHashCode) = False Then Throw ex
         End Try

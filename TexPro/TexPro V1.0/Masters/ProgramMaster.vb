@@ -434,7 +434,7 @@ Public Class ProgramMaster
 
                     OBJPR.alParaval = ALPARAVAL
                     Dim IntResult As Integer = OBJPR.Delete()
-                    MsgBox("Purchase PRGuest Deleted")
+                    MsgBox("Purchase PRG Deleted")
                     clear()
 
                 End If
