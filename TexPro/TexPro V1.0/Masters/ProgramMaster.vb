@@ -424,18 +424,18 @@ Public Class ProgramMaster
                 Dim TEMPMSG As Integer = MsgBox("Delete PRG?", MsgBoxStyle.YesNo)
                 If TEMPMSG = vbYes Then
 
-                    'Dim ALPARAVAL As New ArrayList
-                    'Dim OBJPR As New ClsPRG
+                    Dim ALPARAVAL As New ArrayList
+                    Dim OBJPR As New ClsPRG
 
-                    'ALPARAVAL.Add(TEMPPRGNO)
-                    'ALPARAVAL.Add(CmpId)
-                    'ALPARAVAL.Add(Locationid)
-                    'ALPARAVAL.Add(YearId)
+                    ALPARAVAL.Add(TEMPPRGNO)
+                    ALPARAVAL.Add(CmpId)
+                    ALPARAVAL.Add(Locationid)
+                    ALPARAVAL.Add(YearId)
 
-                    'OBJPR.alParaval = ALPARAVAL
-                    'Dim IntResult As Integer = OBJPR.Delete()
-                    'MsgBox("Purchase PRGuest Deleted")
-                    'clear()
+                    OBJPR.alParaval = ALPARAVAL
+                    Dim IntResult As Integer = OBJPR.Delete()
+                    MsgBox("Purchase PRG Deleted")
+                    clear()
 
                 End If
             End If
