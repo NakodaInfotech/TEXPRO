@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GIT\\TEXPRO\\TexPro\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\reports\\crystal reports\\mgf\\programreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
-      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\reports\\crystal reports\\mgf\\programreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|D:\\GIT\\TEXPRO\\TexPro\\texpro v1.0\\reports\\crystal reports\\stocks\\bale stock\\balestock_jobwisesummary.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
-      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\reports\\crystal reports\\stocks\\bale stock\\balestock_jobwisesummary.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,38 +9,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProgramReport.rpt",
-              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Reports\\Crystal Reports\\mgf\\ProgramReport.rpt",
-              "RelativeDocumentMoniker": "TexPro V1.0\\Reports\\Crystal Reports\\mgf\\ProgramReport.rpt",
-              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Reports\\Crystal Reports\\mgf\\ProgramReport.rpt",
-              "RelativeToolTip": "TexPro V1.0\\Reports\\Crystal Reports\\mgf\\ProgramReport.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
-              "WhenOpened": "2025-11-20T10:29:09.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BALESTOCK_JOBWISESUMMARY.rpt",
-              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Reports\\Crystal Reports\\Stocks\\BALE STOCK\\BALESTOCK_JOBWISESUMMARY.rpt",
-              "RelativeDocumentMoniker": "TexPro V1.0\\Reports\\Crystal Reports\\Stocks\\BALE STOCK\\BALESTOCK_JOBWISESUMMARY.rpt",
-              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Reports\\Crystal Reports\\Stocks\\BALE STOCK\\BALESTOCK_JOBWISESUMMARY.rpt",
-              "RelativeToolTip": "TexPro V1.0\\Reports\\Crystal Reports\\Stocks\\BALE STOCK\\BALESTOCK_JOBWISESUMMARY.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVDhPpZJNaBNBFMf/M7ub2NhajSDiwS96CbY2BykojaD0oF5s0YPgQYReLHgpeNCLYv0AexNRb1VUAkJcPXgQEUG89BIaxI9gqzGxH6QmXTef3Wx2nJkmNev25g8ebx7z3n/ezBv8F4wx0lhK7j6fYo3lmowMhl35HoRA3XGk/YvYW\u002BsA2vCrUEIwu1hEJltwmeDc8V5Plx4BAaXEY4J7LxLSt4q4BBS6Eiq8oGm3nXHZ1VCkS9pgfxc62/0yT\u002BASaNRLIWE6ieHB3H1EZsMyVhUKTXU37Yo0RZFeVQiuL14D1tnooBtQcEwcSO9d7aoVdefw5yFC2GG\u002BDsa/OTj228LYwmXejYrkzxkUsqZMNG0TfZkexA99lHETUqlYJ0rV5YEPqfKOG7Glo3MGRSTkx2T4JNp2\u002BzGfmMf3JzNAHijHarJIfz\u002BN0wMh2QoduRrVL9x6NqrWzUt3hjfjYMiHV1NVWNHHCJAOoMof3OBOt10T8XD24kOiv0uynFFkp8ZTrPv8NNs3\u002BpXtifawUmWZWbU6q9l16Z\u002B\u002BTXrHOHHzDPP7ND6iNvSHAtjYrkLTNDzqfQleBIU/rDhdeI1Po4l7JpyqDSTSDoKdPmwLqqhaNdh2vbHrxXWhidcZ9mXBj3yJYr3Pwf7tBnL5HLZu2YRA4O/nERzp2yVrXQJiIhWrdsUwy92/lorZyURqLP4p/YZv/eBXLK9ktQL8AbhJ7xVosbKmAAAAAElFTkSuQmCC",
-              "WhenOpened": "2025-11-20T10:12:21.929Z"
             }
           ]
         }
