@@ -941,3 +941,8 @@ D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro.vbproj.Up2Date
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.exe
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.xml
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.pdb
+<<<<<<< HEAD
+=======
+D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.exe.config
+D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.SaleOrderClose.resources
+>>>>>>> 13fb28ab74eb662a5a12318168bd5ab1c972402c
