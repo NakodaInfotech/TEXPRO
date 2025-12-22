@@ -125,6 +125,8 @@ Public Class SOFilter
                     OBJGRN.FRMSTRING = "SOSTATUSDTLS"
                 ElseIf RDBITEM.Checked = True Then
                     OBJGRN.FRMSTRING = "SOSTATUSITEM"
+                ElseIf RDBITEMWITHSTOCK.Checked = True Then
+                    OBJGRN.FRMSTRING = "SOSTATUSITEMWITHSTOCK"
                 End If
 
 

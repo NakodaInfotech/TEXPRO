@@ -53,6 +53,7 @@ Public Class SaleInvoiceDesign
     Dim RPTSOSTATUS As New SOStatusReport
     Dim RPTSOSTATUSDTLS As New SOStatusDetailsReport
     Dim RPTSOSTATUSITEM As New SOItemStatusReport
+    Dim RPTSOSTATUSITEMWITHSTOCK As New SOItemStatusStockReport
 
 
     Dim RPTPENDING As New GRNPendingCheck
@@ -128,6 +129,7 @@ Public Class SaleInvoiceDesign
             If FRMSTRING = "SOSTATUS" Then crTables = RPTSOSTATUS.Database.Tables
             If FRMSTRING = "SOSTATUSDTLS" Then crTables = RPTSOSTATUSDTLS.Database.Tables
             If FRMSTRING = "SOSTATUSITEM" Then crTables = RPTSOSTATUSITEM.Database.Tables
+            If FRMSTRING = "SOSTATUSITEMWITHSTOCK" Then crTables = RPTSOSTATUSITEMWITHSTOCK.Database.Tables
 
 
             For Each crTable In crTables
@@ -243,7 +245,10 @@ Public Class SaleInvoiceDesign
                 crpo.ReportSource = RPTSOSTATUSITEM
                 RPTSOSTATUSITEM.DataDefinition.FormulaFields("TYPE").Text = "'" & PENDINGSO & "'"
                 RPTSOSTATUSITEM.DataDefinition.FormulaFields("CLIENTNAME").Text = "'" & ClientName & "'"
-
+            ElseIf FRMSTRING = "SOSTATUSITEMWITHSTOCK" Then
+                crpo.ReportSource = RPTSOSTATUSITEMWITHSTOCK
+                RPTSOSTATUSITEMWITHSTOCK.DataDefinition.FormulaFields("TYPE").Text = "'" & PENDINGSO & "'"
+                RPTSOSTATUSITEMWITHSTOCK.DataDefinition.FormulaFields("CLIENTNAME").Text = "'" & ClientName & "'"
             End If
 
             crpo.Zoom(100)
@@ -468,6 +473,12 @@ Public Class SaleInvoiceDesign
                 expo.ExportFormatType = ExportFormatType.PortableDocFormat
                 expo.DestinationOptions = oDfDopt
                 RPTSOSTATUSITEM.Export()
+            ElseIf FRMSTRING = "SOSTATUSITEMWITHSTOCK" Then
+                expo = RPTSOSTATUSITEMWITHSTOCK.ExportOptions
+                expo.ExportDestinationType = ExportDestinationType.DiskFile
+                expo.ExportFormatType = ExportFormatType.PortableDocFormat
+                expo.DestinationOptions = oDfDopt
+                RPTSOSTATUSITEMWITHSTOCK.Export()
 
             End If
 

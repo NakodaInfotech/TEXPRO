@@ -1960,6 +1960,12 @@
       <DependentUpon>SaleRetTransWiseSummary.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reports\Crystal Reports\SALE\Order\SOItemStatusStockReport.vb">
+      <DependentUpon>SOItemStatusStockReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Reports\Crystal Reports\SALE\GDN\DispatchAgentMonthlyReport.vb">
       <DependentUpon>DispatchAgentMonthlyReport.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -2338,7 +2344,7 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Reports\Crystal Reports\Stocks\Store Stock\BALESTOCK_NORMALLOT.vb">
+    <Compile Include="Reports\Crystal Reports\Stocks\BALE STOCK\BALESTOCK_NORMALLOT.vb">
       <DependentUpon>BALESTOCK_NORMALLOT.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
       <SubType>Component</SubType>
@@ -5721,6 +5727,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>SaleRetTransWiseSummary.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Crystal Reports\SALE\Order\SOItemStatusStockReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SOItemStatusStockReport.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Crystal Reports\SALE\GDN\DispatchAgentMonthlyReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>DispatchAgentMonthlyReport.vb</LastGenOutput>
@@ -5973,7 +5983,7 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BALESTOCK_CATEGORYWISEWITHOUTTOTAL.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Crystal Reports\Stocks\Store Stock\BALESTOCK_NORMALLOT.rpt">
+    <EmbeddedResource Include="Reports\Crystal Reports\Stocks\BALE STOCK\BALESTOCK_NORMALLOT.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BALESTOCK_NORMALLOT.vb</LastGenOutput>
     </EmbeddedResource>

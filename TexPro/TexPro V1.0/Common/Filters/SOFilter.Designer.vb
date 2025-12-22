@@ -92,6 +92,7 @@ Partial Class SOFilter
         Me.Label9 = New System.Windows.Forms.Label()
         Me.cmdshow = New System.Windows.Forms.Button()
         Me.cmdexit = New System.Windows.Forms.Button()
+        Me.RDBITEMWITHSTOCK = New System.Windows.Forms.RadioButton()
         Me.BlendPanel2.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         CType(Me.GRIDBILLDETAILSORDER, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -217,7 +218,7 @@ Partial Class SOFilter
         '
         Me.GORDERNO.Caption = "Order No"
         Me.GORDERNO.FieldName = "ORDERNO"
-        Me.GORDERNO.ImageIndex = 0
+        Me.GORDERNO.ImageOptions.ImageIndex = 0
         Me.GORDERNO.Name = "GORDERNO"
         Me.GORDERNO.OptionsColumn.AllowEdit = False
         Me.GORDERNO.Visible = True
@@ -317,7 +318,7 @@ Partial Class SOFilter
         '
         Me.GITEMNAME.Caption = "Item Name"
         Me.GITEMNAME.FieldName = "ITEMNAME"
-        Me.GITEMNAME.ImageIndex = 0
+        Me.GITEMNAME.ImageOptions.ImageIndex = 0
         Me.GITEMNAME.Name = "GITEMNAME"
         Me.GITEMNAME.OptionsColumn.AllowEdit = False
         Me.GITEMNAME.Visible = True
@@ -400,7 +401,7 @@ Partial Class SOFilter
         '
         Me.GCOLOR.Caption = "Shade"
         Me.GCOLOR.FieldName = "COLOR"
-        Me.GCOLOR.ImageIndex = 0
+        Me.GCOLOR.ImageOptions.ImageIndex = 0
         Me.GCOLOR.Name = "GCOLOR"
         Me.GCOLOR.OptionsColumn.AllowEdit = False
         Me.GCOLOR.Visible = True
@@ -477,7 +478,7 @@ Partial Class SOFilter
         '
         Me.GDESIGN.Caption = "Design No"
         Me.GDESIGN.FieldName = "DESIGNNO"
-        Me.GDESIGN.ImageIndex = 0
+        Me.GDESIGN.ImageOptions.ImageIndex = 0
         Me.GDESIGN.Name = "GDESIGN"
         Me.GDESIGN.OptionsColumn.AllowEdit = False
         Me.GDESIGN.Visible = True
@@ -540,7 +541,7 @@ Partial Class SOFilter
         '
         Me.GNAME.Caption = "Name"
         Me.GNAME.FieldName = "NAME"
-        Me.GNAME.ImageIndex = 0
+        Me.GNAME.ImageOptions.ImageIndex = 0
         Me.GNAME.Name = "GNAME"
         Me.GNAME.OptionsColumn.AllowEdit = False
         Me.GNAME.Visible = True
@@ -693,6 +694,7 @@ Partial Class SOFilter
         'GroupBox3
         '
         Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox3.Controls.Add(Me.RDBITEMWITHSTOCK)
         Me.GroupBox3.Controls.Add(Me.RDBITEM)
         Me.GroupBox3.Controls.Add(Me.RDBPARTYDTLS)
         Me.GroupBox3.Controls.Add(Me.RDBPARTY)
@@ -912,6 +914,16 @@ Partial Class SOFilter
         Me.cmdexit.Text = "E&xit"
         Me.cmdexit.UseVisualStyleBackColor = False
         '
+        'RDBITEMWITHSTOCK
+        '
+        Me.RDBITEMWITHSTOCK.AutoSize = True
+        Me.RDBITEMWITHSTOCK.Location = New System.Drawing.Point(14, 61)
+        Me.RDBITEMWITHSTOCK.Name = "RDBITEMWITHSTOCK"
+        Me.RDBITEMWITHSTOCK.Size = New System.Drawing.Size(174, 18)
+        Me.RDBITEMWITHSTOCK.TabIndex = 7
+        Me.RDBITEMWITHSTOCK.Text = "Item Summ With Bale Stock"
+        Me.RDBITEMWITHSTOCK.UseVisualStyleBackColor = True
+        '
         'SOFilter
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -1029,4 +1041,5 @@ Partial Class SOFilter
     Private WithEvents GORDERNO As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents RDBITEM As RadioButton
     Friend WithEvents GCATEGORY As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents RDBITEMWITHSTOCK As RadioButton
 End Class
