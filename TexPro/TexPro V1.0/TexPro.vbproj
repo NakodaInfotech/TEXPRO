@@ -3166,12 +3166,6 @@
     <Compile Include="Transactions\Sale\Sale Invoice\PrintInvoiceFilter.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transactions\Sale\Sale Order\SaleOrderClose.Designer.vb">
-      <DependentUpon>SaleOrderClose.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Transactions\Sale\Sale Order\SaleOrderClose.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Utilities\Others\BlockUser.Designer.vb">
       <DependentUpon>BlockUser.vb</DependentUpon>
     </Compile>
@@ -6422,9 +6416,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Transactions\Sale\Sale Invoice\PrintInvoiceFilter.resx">
       <DependentUpon>PrintInvoiceFilter.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Transactions\Sale\Sale Order\SaleOrderClose.resx">
-      <DependentUpon>SaleOrderClose.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Utilities\Others\BlockUser.resx">
       <DependentUpon>BlockUser.vb</DependentUpon>

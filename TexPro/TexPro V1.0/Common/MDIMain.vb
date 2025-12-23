@@ -622,7 +622,6 @@ Public Class MDIMain
                         SO_MASTER.Enabled = True
                         'SO_TOOL.Enabled = True
                         SOADD.Enabled = True
-                        SOCLOSE.Enabled = True
                         OPSO_MASTER.Enabled = True
                         OPSOADD.Enabled = True
                     Else
@@ -633,7 +632,6 @@ Public Class MDIMain
                         SO_MASTER.Enabled = True
                         'WO_TOOL.Enabled = True
                         SOEDIT.Enabled = True
-                        SOCLOSE.Enabled = True
                         OPSO_MASTER.Enabled = True
                         OPSOEDIT.Enabled = True
                     Else
@@ -5080,16 +5078,6 @@ SKIPLINE:
             Dim OBJPRG As New ProgramFilter
             OBJPRG.MdiParent = Me
             OBJPRG.Show()
-        Catch ex As Exception
-            Throw ex
-        End Try
-    End Sub
-
-    Private Sub SOCLOSE_Click(sender As Object, e As EventArgs) Handles SOCLOSE.Click
-        Try
-            Dim OBJSO As New SaleOrderClose
-            OBJSO.MdiParent = Me
-            OBJSO.Show()
         Catch ex As Exception
             Throw ex
         End Try

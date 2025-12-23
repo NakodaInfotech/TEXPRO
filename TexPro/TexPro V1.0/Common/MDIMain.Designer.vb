@@ -726,8 +726,6 @@ Partial Class MDIMain
         Me.DESIGNREGISTERTOOLSTRIP = New System.Windows.Forms.ToolStripSeparator()
         Me.XtraTabbedMdiManager1 = New DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(Me.components)
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
-        Me.SOCLOSE = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator120 = New System.Windows.Forms.ToolStripSeparator()
         Me.MenuStrip.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.XtraTabbedMdiManager1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2932,42 +2930,42 @@ Partial Class MDIMain
         '
         'SO_MASTER
         '
-        Me.SO_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SOADD, Me.SOEDIT, Me.ToolStripSeparator79, Me.SOCLOSE, Me.ToolStripSeparator120})
+        Me.SO_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SOADD, Me.SOEDIT, Me.ToolStripSeparator79})
         Me.SO_MASTER.Enabled = False
         Me.SO_MASTER.Name = "SO_MASTER"
-        Me.SO_MASTER.Size = New System.Drawing.Size(180, 22)
+        Me.SO_MASTER.Size = New System.Drawing.Size(167, 22)
         Me.SO_MASTER.Text = "Sale &Order "
         '
         'SOADD
         '
         Me.SOADD.Enabled = False
         Me.SOADD.Name = "SOADD"
-        Me.SOADD.Size = New System.Drawing.Size(180, 22)
+        Me.SOADD.Size = New System.Drawing.Size(162, 22)
         Me.SOADD.Text = "&Add New S.O."
         '
         'SOEDIT
         '
         Me.SOEDIT.Enabled = False
         Me.SOEDIT.Name = "SOEDIT"
-        Me.SOEDIT.Size = New System.Drawing.Size(180, 22)
+        Me.SOEDIT.Size = New System.Drawing.Size(162, 22)
         Me.SOEDIT.Text = "&Edit Existing S.O."
         '
         'ToolStripSeparator79
         '
         Me.ToolStripSeparator79.Name = "ToolStripSeparator79"
-        Me.ToolStripSeparator79.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator79.Size = New System.Drawing.Size(159, 6)
         '
         'ToolStripSeparator33
         '
         Me.ToolStripSeparator33.Name = "ToolStripSeparator33"
-        Me.ToolStripSeparator33.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator33.Size = New System.Drawing.Size(164, 6)
         '
         'PACKINGSUMM_MASTER
         '
         Me.PACKINGSUMM_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PACKINGSUMMADD, Me.PACKINGSUMMEDIT, Me.ToolStripSeparator216})
         Me.PACKINGSUMM_MASTER.Enabled = False
         Me.PACKINGSUMM_MASTER.Name = "PACKINGSUMM_MASTER"
-        Me.PACKINGSUMM_MASTER.Size = New System.Drawing.Size(180, 22)
+        Me.PACKINGSUMM_MASTER.Size = New System.Drawing.Size(167, 22)
         Me.PACKINGSUMM_MASTER.Text = "Packing Summary"
         '
         'PACKINGSUMMADD
@@ -2994,7 +2992,7 @@ Partial Class MDIMain
         Me.GDN_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GDNADD, Me.GDNEDIT, Me.ToolStripSeparator118})
         Me.GDN_MASTER.Enabled = False
         Me.GDN_MASTER.Name = "GDN_MASTER"
-        Me.GDN_MASTER.Size = New System.Drawing.Size(180, 22)
+        Me.GDN_MASTER.Size = New System.Drawing.Size(167, 22)
         Me.GDN_MASTER.Text = "Challan"
         '
         'GDNADD
@@ -3019,14 +3017,14 @@ Partial Class MDIMain
         'ToolStripSeparator125
         '
         Me.ToolStripSeparator125.Name = "ToolStripSeparator125"
-        Me.ToolStripSeparator125.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator125.Size = New System.Drawing.Size(164, 6)
         '
         'SALE_MASTER
         '
         Me.SALE_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SALEADD, Me.SALEEDIT, Me.ToolStripSeparator131})
         Me.SALE_MASTER.Enabled = False
         Me.SALE_MASTER.Name = "SALE_MASTER"
-        Me.SALE_MASTER.Size = New System.Drawing.Size(180, 22)
+        Me.SALE_MASTER.Size = New System.Drawing.Size(167, 22)
         Me.SALE_MASTER.Text = "Sales &Invoice"
         '
         'SALEADD
@@ -3053,7 +3051,7 @@ Partial Class MDIMain
         Me.SALERET_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SALERETADD, Me.SALERETEDIT, Me.ToolStripSeparator183})
         Me.SALERET_MASTER.Enabled = False
         Me.SALERET_MASTER.Name = "SALERET_MASTER"
-        Me.SALERET_MASTER.Size = New System.Drawing.Size(180, 22)
+        Me.SALERET_MASTER.Size = New System.Drawing.Size(167, 22)
         Me.SALERET_MASTER.Text = "Sales &Return"
         '
         'SALERETADD
@@ -3078,14 +3076,14 @@ Partial Class MDIMain
         'ToolStripSeparator39
         '
         Me.ToolStripSeparator39.Name = "ToolStripSeparator39"
-        Me.ToolStripSeparator39.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator39.Size = New System.Drawing.Size(164, 6)
         '
         'PROFORMA_MASTER
         '
         Me.PROFORMA_MASTER.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PROFORMAADD, Me.PROFORMAEDIT, Me.ToolStripSeparator116})
         Me.PROFORMA_MASTER.Enabled = False
         Me.PROFORMA_MASTER.Name = "PROFORMA_MASTER"
-        Me.PROFORMA_MASTER.Size = New System.Drawing.Size(180, 22)
+        Me.PROFORMA_MASTER.Size = New System.Drawing.Size(167, 22)
         Me.PROFORMA_MASTER.Text = "Proforma"
         '
         'PROFORMAADD
@@ -3110,19 +3108,19 @@ Partial Class MDIMain
         'ToolStripSeparator32
         '
         Me.ToolStripSeparator32.Name = "ToolStripSeparator32"
-        Me.ToolStripSeparator32.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator32.Size = New System.Drawing.Size(164, 6)
         '
         'FORMENTRY_MASTER
         '
         Me.FORMENTRY_MASTER.Enabled = False
         Me.FORMENTRY_MASTER.Name = "FORMENTRY_MASTER"
-        Me.FORMENTRY_MASTER.Size = New System.Drawing.Size(180, 22)
+        Me.FORMENTRY_MASTER.Size = New System.Drawing.Size(167, 22)
         Me.FORMENTRY_MASTER.Text = "Form Entry"
         '
         'ToolStripSeparator194
         '
         Me.ToolStripSeparator194.Name = "ToolStripSeparator194"
-        Me.ToolStripSeparator194.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator194.Size = New System.Drawing.Size(164, 6)
         '
         'ToolStripSeparator22
         '
@@ -5228,18 +5226,6 @@ Partial Class MDIMain
         '
         Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Money Twins"
         '
-        'SOCLOSE
-        '
-        Me.SOCLOSE.Enabled = False
-        Me.SOCLOSE.Name = "SOCLOSE"
-        Me.SOCLOSE.Size = New System.Drawing.Size(180, 22)
-        Me.SOCLOSE.Text = "Close Multiple S.O."
-        '
-        'ToolStripSeparator120
-        '
-        Me.ToolStripSeparator120.Name = "ToolStripSeparator120"
-        Me.ToolStripSeparator120.Size = New System.Drawing.Size(177, 6)
-        '
         'MDIMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -5969,6 +5955,4 @@ Partial Class MDIMain
     Friend WithEvents FOLDEDIT As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator87 As ToolStripSeparator
     Friend WithEvents NKTPPROGRAM_MENU As ToolStripMenuItem
-    Friend WithEvents SOCLOSE As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator120 As ToolStripSeparator
 End Class
