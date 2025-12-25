@@ -765,6 +765,7 @@ D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.SelectGdnReturn.resources
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.InvoiceDetails.resources
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.InvoiceMasterGridDetails.resources
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.PrintInvoiceFilter.resources
+D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.SaleOrderClose.resources
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.BlockUser.resources
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.DefaultRegister.resources
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro_V1.DefaultScreentype.resources
@@ -941,4 +942,3 @@ D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro.vbproj.Up2Date
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.exe
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.xml
 D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.pdb
-D:\GIT\TEXPRO\TexPro\TexPro V1.0\obj\Debug\TexPro V1.0.exe.config
