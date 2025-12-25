@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\GIT\\TEXPRO\\TexPro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\common\\mdimain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\common\\mdimain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\common\\mdimain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\common\\mdimain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\reports\\crystal reports\\stocks\\bale stock\\balestock_jobwisesummary.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\reports\\crystal reports\\stocks\\bale stock\\balestock_jobwisesummary.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,27 +35,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MDIMain.vb",
-              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Common\\MDIMain.vb",
-              "RelativeDocumentMoniker": "TexPro V1.0\\Common\\MDIMain.vb",
-              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Common\\MDIMain.vb",
-              "RelativeToolTip": "TexPro V1.0\\Common\\MDIMain.vb",
-              "ViewState": "AgIAAMgTAAAAAAAAAAAiwOETAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-12-25T10:18:59.619Z",
+              "Title": "BALESTOCK_JOBWISESUMMARY.rpt",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Reports\\Crystal Reports\\Stocks\\BALE STOCK\\BALESTOCK_JOBWISESUMMARY.rpt",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Reports\\Crystal Reports\\Stocks\\BALE STOCK\\BALESTOCK_JOBWISESUMMARY.rpt",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Reports\\Crystal Reports\\Stocks\\BALE STOCK\\BALESTOCK_JOBWISESUMMARY.rpt",
+              "RelativeToolTip": "TexPro V1.0\\Reports\\Crystal Reports\\Stocks\\BALE STOCK\\BALESTOCK_JOBWISESUMMARY.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVDhPpZJNSFRRFMd/9973ZnIaswwiWvSFmyFNFyEUTlC4qDYptghaSOAmoY3QojZFVkLuIqZ2FhVCYGOLFhERRBs3MkP0IWmZ5geaOo06M76v28Ia581r1w/O4lzO\u002BZ9z7jnwP2itRamfGEzpUr\u002BczpYGX3yAxGBKu56nXc/T5SQGU/pfBWTgQQim5leYnFv2GcCF0/WBLgMCAFKKgAHce56GslF9Akquu0qKot3xepFC0BqvoTVeQ0tTDVXRcDHHJ/AnHyUlSkqSYoAH0/eJTzWgpMRQEtPwN\u002B3zTKUAMJTg5vwN2ORQKbew7GU5MnGw2FUpxt6OT61C6ONA9fBXj1O/LLpnryKlwciPMZbnsgBknSyNk3UMH/vgExD5vNW2Wlhrfj\u002Be23NrYOnkdEYSj4UZajhDxf4wM\u002BkZvj0Zg0XIDdgAJN\u002BNcq45JgBk5/X\u002B5KXbz7oMN3vlbsd2jsZCvEwVsPofExGVUNCQgULS8W0kwPnLD0Xy7YheyKzos73juvbiqD7U9UUf6K/Tq/k1bdmuth1XW7arn74ZCa6xr6ddh0MmVdEKmmIRtkYNTNPkUf0LLNtFqfXqSglMtfH3gUMqOJCe8KiuCrGr2qBg2TiOWx5WxDdQ36tJ/Xk2zOKqZHPI4/DuDAuLC\u002BzcsY1IZON4AE407hOUC\u002BTzVlvesq9lsrnan0src0Pp8e7hjxOvge99Pe250ti//Aa4Se8VLBKf0wAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-12-25T11:36:02.858Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MDIMain.vb [Design]",
-              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Common\\MDIMain.vb",
-              "RelativeDocumentMoniker": "TexPro V1.0\\Common\\MDIMain.vb",
-              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Common\\MDIMain.vb [Design]",
-              "RelativeToolTip": "TexPro V1.0\\Common\\MDIMain.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-12-25T10:18:51.388Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
