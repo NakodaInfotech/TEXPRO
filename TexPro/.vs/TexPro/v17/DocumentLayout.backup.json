@@ -1,7 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GIT\\TEXPRO\\TexPro\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\common\\mdimain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\common\\mdimain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\common\\mdimain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\common\\mdimain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\transactions\\sale\\sale order\\saleorderclose.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\transactions\\sale\\sale order\\saleorderclose.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\transactions\\sale\\sale order\\saleorderclose.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\transactions\\sale\\sale order\\saleorderclose.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\transactions\\sale\\sale order\\saleorder.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\transactions\\sale\\sale order\\saleorder.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\transactions\\sale\\sale order\\saleorder.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\transactions\\sale\\sale order\\saleorder.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|d:\\git\\texpro\\texpro\\texpro v1.0\\transactions\\purchase\\purchase order\\purchaseorderclose.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{1661FC93-ECF5-4B85-83B2-1A8F4B67BA11}|TexPro V1.0\\TexPro.vbproj|solutionrelative:texpro v1.0\\transactions\\purchase\\purchase order\\purchaseorderclose.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +38,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MDIMain.vb",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Common\\MDIMain.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Common\\MDIMain.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Common\\MDIMain.vb",
+              "RelativeToolTip": "TexPro V1.0\\Common\\MDIMain.vb",
+              "ViewState": "AgIAAF0CAAAAAAAAAAAiwGkCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-25T10:11:06.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SaleOrder.vb",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrder.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrder.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrder.vb",
+              "RelativeToolTip": "TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrder.vb",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-25T10:00:51.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SaleOrder.vb [Design]",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrder.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrder.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrder.vb [Design]",
+              "RelativeToolTip": "TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrder.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-25T09:54:25.981Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SaleOrderClose.vb",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrderClose.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrderClose.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrderClose.vb",
+              "RelativeToolTip": "TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrderClose.vb",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAEMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-25T09:49:21.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PurchaseOrderClose.vb [Design]",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Transactions\\Purchase\\Purchase Order\\PurchaseOrderClose.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Transactions\\Purchase\\Purchase Order\\PurchaseOrderClose.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Transactions\\Purchase\\Purchase Order\\PurchaseOrderClose.vb [Design]",
+              "RelativeToolTip": "TexPro V1.0\\Transactions\\Purchase\\Purchase Order\\PurchaseOrderClose.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-25T09:47:42.224Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SaleOrderClose.vb [Design]",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrderClose.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrderClose.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrderClose.vb [Design]",
+              "RelativeToolTip": "TexPro V1.0\\Transactions\\Sale\\Sale Order\\SaleOrderClose.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-25T09:45:43.701Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MDIMain.vb [Design]",
+              "DocumentMoniker": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Common\\MDIMain.vb",
+              "RelativeDocumentMoniker": "TexPro V1.0\\Common\\MDIMain.vb",
+              "ToolTip": "D:\\GIT\\TEXPRO\\TexPro\\TexPro V1.0\\Common\\MDIMain.vb [Design]",
+              "RelativeToolTip": "TexPro V1.0\\Common\\MDIMain.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-25T09:43:47.972Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
