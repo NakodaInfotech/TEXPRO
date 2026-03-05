@@ -169,6 +169,8 @@ Public Class ClsPackingSummary
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@FELT", alParaval(I)))
                 I = I + 1
+                .Add(New SqlClient.SqlParameter("@ZERO", alParaval(I)))
+                I = I + 1
 
 
                 .Add(New SqlClient.SqlParameter("@BLEACHSRNO", alParaval(I)))
@@ -354,7 +356,8 @@ Public Class ClsPackingSummary
                 I = I + 1
                 .Add(New SqlClient.SqlParameter("@FELT", alParaval(I)))
                 I = I + 1
-
+                .Add(New SqlClient.SqlParameter("@ZERO", alParaval(I)))
+                I = I + 1
 
                 .Add(New SqlClient.SqlParameter("@BLEACHSRNO", alParaval(I)))
                 I = I + 1

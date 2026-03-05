@@ -110,6 +110,7 @@ Public Class PackingSummary
         CHKCUTTINGCHGS.CheckState = CheckState.Unchecked
         CHKCARTONCHGS.CheckState = CheckState.Unchecked
         CHKFELT.CheckState = CheckState.Unchecked
+        CHKZERO.CheckState = CheckState.Unchecked
 
         LBLTOTALLOTPCS.Text = 0
         LBLTOTALLOTMTRS.Text = 0
@@ -427,6 +428,8 @@ Public Class PackingSummary
             alParaval.Add(CHKCUTTINGCHGS.Checked)
             alParaval.Add(CHKCARTONCHGS.Checked)
             alParaval.Add(CHKFELT.Checked)
+            alParaval.Add(CHKZERO.Checked)
+
 
 
             Dim BLEACHSRNO As String = ""
@@ -644,6 +647,8 @@ Public Class PackingSummary
                     CHKCUTTINGCHGS.Checked = Convert.ToBoolean(dttable.Rows(0).Item("CUTTINGCHGS"))
                     CHKCARTONCHGS.Checked = Convert.ToBoolean(dttable.Rows(0).Item("CARTONCHGS"))
                     CHKFELT.Checked = Convert.ToBoolean(dttable.Rows(0).Item("FELT"))
+                    CHKZERO.Checked = Convert.ToBoolean(dttable.Rows(0).Item("ZERO"))
+
 
                     If Convert.ToBoolean(dttable.Rows(0).Item("INVDONE")) = True Then
                         lbllocked.Visible = True
@@ -1313,6 +1318,7 @@ SKIPADDROW:
                 CHKCUTTINGCHGS.Visible = True
                 CHKCARTONCHGS.Visible = True
                 CHKFELT.Visible = True
+                CHKZERO.Visible = True
                 LBLNEWFOLD.Visible = True
                 TXTNEWFOLD.Visible = True
                 CMDCONVMTRS.Visible = True
