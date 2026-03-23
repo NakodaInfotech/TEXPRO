@@ -37,6 +37,7 @@ Partial Class PackingSummaryDetails
         Me.GSUMNO = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GDATE = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GNAME = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GPCS = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GFINALMTRS = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GLONGATION = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GTOTALBALES = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -69,7 +70,7 @@ Partial Class PackingSummaryDetails
         Me.cmdok = New System.Windows.Forms.Button()
         Me.PRINTDIALOG = New System.Windows.Forms.PrintDialog()
         Me.PRINTDOC = New System.Drawing.Printing.PrintDocument()
-        Me.GPCS = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.GZERO = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.BlendPanel1.SuspendLayout()
         CType(Me.gridbilldetails, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridbill, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -105,7 +106,7 @@ Partial Class PackingSummaryDetails
         Me.Label4.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(479, 6)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 14)
+        Me.Label4.Size = New System.Drawing.Size(44, 14)
         Me.Label4.TabIndex = 811
         Me.Label4.Text = "Copies"
         '
@@ -116,7 +117,7 @@ Partial Class PackingSummaryDetails
         Me.Label9.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(373, 5)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(18, 14)
+        Me.Label9.Size = New System.Drawing.Size(19, 14)
         Me.Label9.TabIndex = 809
         Me.Label9.Text = "To"
         '
@@ -138,7 +139,7 @@ Partial Class PackingSummaryDetails
         Me.Label10.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(275, 5)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(33, 14)
+        Me.Label10.Size = New System.Drawing.Size(34, 14)
         Me.Label10.TabIndex = 808
         Me.Label10.Text = "From"
         '
@@ -172,7 +173,7 @@ Partial Class PackingSummaryDetails
         Me.Label21.ForeColor = System.Drawing.Color.Red
         Me.Label21.Location = New System.Drawing.Point(600, 35)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(123, 14)
+        Me.Label21.Size = New System.Drawing.Size(138, 14)
         Me.Label21.TabIndex = 441
         Me.Label21.Text = "Locked (Challan Raised)"
         '
@@ -202,7 +203,7 @@ Partial Class PackingSummaryDetails
         '
         Me.gridbill.Appearance.Row.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gridbill.Appearance.Row.Options.UseFont = True
-        Me.gridbill.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GSUMNO, Me.GDATE, Me.GNAME, Me.GPCS, Me.GFINALMTRS, Me.GLONGATION, Me.GTOTALBALES, Me.GSAMPLEMTRS, Me.GFENTMTRS, Me.GSHORTPCS, Me.GREJECTPCS, Me.GSHORTMTRS, Me.GREJECTEDMTRS, Me.GGOODCUTMTRS, Me.GRACKMTRS, Me.GLESSPER, Me.GLESSMTRS, Me.GREMARKS, Me.GCARTONCHGS, Me.GCUTTINGCHGS, Me.GFELT})
+        Me.gridbill.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.GSUMNO, Me.GDATE, Me.GNAME, Me.GPCS, Me.GFINALMTRS, Me.GLONGATION, Me.GTOTALBALES, Me.GSAMPLEMTRS, Me.GFENTMTRS, Me.GSHORTPCS, Me.GREJECTPCS, Me.GSHORTMTRS, Me.GREJECTEDMTRS, Me.GGOODCUTMTRS, Me.GRACKMTRS, Me.GLESSPER, Me.GLESSMTRS, Me.GREMARKS, Me.GCARTONCHGS, Me.GCUTTINGCHGS, Me.GFELT, Me.GZERO})
         Me.gridbill.GridControl = Me.gridbilldetails
         Me.gridbill.Name = "gridbill"
         Me.gridbill.OptionsBehavior.Editable = False
@@ -239,11 +240,21 @@ Partial Class PackingSummaryDetails
         '
         Me.GNAME.Caption = " Name"
         Me.GNAME.FieldName = "NAME"
-        Me.GNAME.ImageIndex = 0
+        Me.GNAME.ImageOptions.ImageIndex = 0
         Me.GNAME.Name = "GNAME"
         Me.GNAME.Visible = True
         Me.GNAME.VisibleIndex = 3
         Me.GNAME.Width = 200
+        '
+        'GPCS
+        '
+        Me.GPCS.Caption = "Pcs"
+        Me.GPCS.FieldName = "PCS"
+        Me.GPCS.Name = "GPCS"
+        Me.GPCS.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)})
+        Me.GPCS.Visible = True
+        Me.GPCS.VisibleIndex = 4
+        Me.GPCS.Width = 60
         '
         'GFINALMTRS
         '
@@ -367,7 +378,7 @@ Partial Class PackingSummaryDetails
         Me.GREMARKS.FieldName = "REMARKS"
         Me.GREMARKS.Name = "GREMARKS"
         Me.GREMARKS.Visible = True
-        Me.GREMARKS.VisibleIndex = 21
+        Me.GREMARKS.VisibleIndex = 22
         Me.GREMARKS.Width = 182
         '
         'GCARTONCHGS
@@ -476,7 +487,7 @@ Partial Class PackingSummaryDetails
         Me.TOOLGRIDDTLS.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOOLGRIDDTLS.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.TOOLGRIDDTLS.Name = "TOOLGRIDDTLS"
-        Me.TOOLGRIDDTLS.Size = New System.Drawing.Size(72, 22)
+        Me.TOOLGRIDDTLS.Size = New System.Drawing.Size(77, 22)
         Me.TOOLGRIDDTLS.Text = "Grid Details"
         '
         'ToolStripSeparator2
@@ -492,7 +503,7 @@ Partial Class PackingSummaryDetails
         Me.lbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lbl.Location = New System.Drawing.Point(19, 34)
         Me.lbl.Name = "lbl"
-        Me.lbl.Size = New System.Drawing.Size(119, 14)
+        Me.lbl.Size = New System.Drawing.Size(130, 14)
         Me.lbl.TabIndex = 251
         Me.lbl.Text = "Select a gdn to Change"
         '
@@ -517,15 +528,13 @@ Partial Class PackingSummaryDetails
         Me.PRINTDIALOG.ShowHelp = True
         Me.PRINTDIALOG.UseEXDialog = True
         '
-        'GPCS
+        'GZERO
         '
-        Me.GPCS.Caption = "Pcs"
-        Me.GPCS.FieldName = "PCS"
-        Me.GPCS.Name = "GPCS"
-        Me.GPCS.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum)})
-        Me.GPCS.Visible = True
-        Me.GPCS.VisibleIndex = 4
-        Me.GPCS.Width = 60
+        Me.GZERO.Caption = "Zero"
+        Me.GZERO.FieldName = "ZERO"
+        Me.GZERO.Name = "GZERO"
+        Me.GZERO.Visible = True
+        Me.GZERO.VisibleIndex = 21
         '
         'PackingSummaryDetails
         '
@@ -595,4 +604,5 @@ Partial Class PackingSummaryDetails
     Friend WithEvents GTOTALBALES As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
     Friend WithEvents GPCS As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents GZERO As DevExpress.XtraGrid.Columns.GridColumn
 End Class

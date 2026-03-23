@@ -197,6 +197,7 @@ Partial Class PackingSummary
         Me.BFOLD = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BGRAMS = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EP = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.CHKZERO = New System.Windows.Forms.CheckBox()
         Me.BlendPanel1.SuspendLayout()
         CType(Me.PBlock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
@@ -214,6 +215,7 @@ Partial Class PackingSummary
         'BlendPanel1
         '
         Me.BlendPanel1.Blend = New VbPowerPack.BlendFill(VbPowerPack.BlendStyle.Vertical, System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(248, Byte), Integer)), System.Drawing.SystemColors.Window)
+        Me.BlendPanel1.Controls.Add(Me.CHKZERO)
         Me.BlendPanel1.Controls.Add(Me.CHKFELT)
         Me.BlendPanel1.Controls.Add(Me.CMDCONVMTRS)
         Me.BlendPanel1.Controls.Add(Me.TXTNEWFOLD)
@@ -2045,6 +2047,19 @@ Partial Class PackingSummary
         Me.EP.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink
         Me.EP.ContainerControl = Me
         '
+        'CHKZERO
+        '
+        Me.CHKZERO.AutoSize = True
+        Me.CHKZERO.BackColor = System.Drawing.Color.Transparent
+        Me.CHKZERO.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CHKZERO.Location = New System.Drawing.Point(1071, 528)
+        Me.CHKZERO.Name = "CHKZERO"
+        Me.CHKZERO.Size = New System.Drawing.Size(77, 19)
+        Me.CHKZERO.TabIndex = 768
+        Me.CHKZERO.Text = "Zero Zero"
+        Me.CHKZERO.UseVisualStyleBackColor = False
+        Me.CHKZERO.Visible = False
+        '
         'PackingSummary
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -2224,4 +2239,5 @@ Partial Class PackingSummary
     Friend WithEvents BGRAMS As DataGridViewTextBoxColumn
     Friend WithEvents LBLTOTALBALES As Label
     Friend WithEvents CHKFELT As CheckBox
+    Friend WithEvents CHKZERO As CheckBox
 End Class
