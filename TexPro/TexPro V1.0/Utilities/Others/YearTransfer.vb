@@ -85,7 +85,6 @@ Public Class YearTransfer
                         TRANSFERBALANCE(SELECTEDYEARID)
 
                         TRANSFERPURORDER(SELECTEDYEARID)
-                        TRANSFERSALEORDER(SELECTEDYEARID)
                         TRANSFERGREYPURORDER(SELECTEDYEARID)
 
                         'TransferProfitLoss(SELECTEDYEARID)
@@ -839,23 +838,6 @@ Public Class YearTransfer
 
             OBJTRF.alParaval = ALPARAVAL
             INTRES = OBJTRF.TRANSFERPURORDER()
-        Catch ex As Exception
-            Throw ex
-        End Try
-    End Sub
-
-    Sub TRANSFERSALEORDER(ByVal SELECTEDYEARID As Integer)
-        Try
-            Dim ALPARAVAL As New ArrayList
-
-            ALPARAVAL.Add(SELECTEDYEARID)
-            ALPARAVAL.Add(CmpId)
-            ALPARAVAL.Add(Locationid)
-            ALPARAVAL.Add(Userid)
-            ALPARAVAL.Add(YearId)
-
-            OBJTRF.alParaval = ALPARAVAL
-            INTRES = OBJTRF.TRANSFERSALEORDER()
         Catch ex As Exception
             Throw ex
         End Try

@@ -464,7 +464,7 @@ Public Class OpeningStock
                 BLN = False
             End If
         ElseIf TYPE = "JOBOUT" Then
-            If cmbmerchant.Text.Trim <> "" And cmbname.Text.Trim <> "" And txtjobno.Text.Trim <> "" And Val(txtpcs.Text) > 0 And cmbunit.Text.Trim <> "" And Val(txtMtrs.Text) > 0 Then
+            If cmbmerchant.Text.Trim <> "" And TXTLOTNO.Text.Trim <> "" And cmbname.Text.Trim <> "" And txtjobno.Text.Trim <> "" And txtbale.Text.Trim <> "" And Val(txtpcs.Text) > 0 And cmbunit.Text.Trim <> "" And Val(txtsaree.Text.Trim) > 0 And Val(txtMtrs.Text) > 0 Then
                 fillgrid()
             Else
                 BLN = False
