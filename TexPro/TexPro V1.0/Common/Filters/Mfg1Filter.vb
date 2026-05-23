@@ -64,15 +64,10 @@ Public Class Mfg1Filter
             ElseIf chkfull.Checked = False Then
                 '
                 formula = " {mfg1_view.YEARID}= " & YearId
-                If cmbprocess.Text.Trim <> "" Then
-                    formula = formula & " and {mfg1_view.Process}='" & cmbprocess.Text.Trim & "'"
-                End If
-                If cmbQuality.Text.Trim <> "" Then
-                    formula = formula & " and {mfg1_view.Quality}='" & cmbQuality.Text.Trim & "'"
-                End If
-                If TXTLOTNO.Text.Trim <> "" Then
-                    formula = formula & " and {mfg1_view.LOTNO}=" & TXTLOTNO.Text.Trim
-                End If
+                If cmbprocess.Text.Trim <> "" Then formula = formula & " and {mfg1_view.Process}='" & cmbprocess.Text.Trim & "'"
+                If cmbQuality.Text.Trim <> "" Then formula = formula & " and {@QUALITYNAME}='" & cmbQuality.Text.Trim & "'"
+                If TXTLOTNO.Text.Trim <> "" Then formula = formula & " and {mfg1_view.LOTNO}=" & TXTLOTNO.Text.Trim
+
                 If rdbdetail.Checked = True Then
                     If TXTLOTNO.Text = "" Then
                         If CHKVALUE.CheckState = CheckState.Unchecked Then
@@ -91,6 +86,8 @@ Public Class Mfg1Filter
                     End If
                 ElseIf RDBMONTHLY.Checked = True Then
                     objstock.frmstring = "MFGMONTHLY"
+                ElseIf RDBDYEDFOLD.Checked = True Then
+                    objstock.frmstring = "MFGDYEDFOLD"
                 End If
 
                 If chkNEGATIVE.Checked = True Then

@@ -23,6 +23,7 @@ Partial Class Mfg1Filter
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.BlendPanel1 = New VbPowerPack.BlendPanel()
+        Me.CHKOURQUALITY = New System.Windows.Forms.CheckBox()
         Me.CHKVALUE = New System.Windows.Forms.CheckBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.RDBBOTH = New System.Windows.Forms.RadioButton()
@@ -53,7 +54,7 @@ Partial Class Mfg1Filter
         Me.cmdshowreport = New System.Windows.Forms.Button()
         Me.cmdexit = New System.Windows.Forms.Button()
         Me.lblheading = New System.Windows.Forms.Label()
-        Me.CHKOURQUALITY = New System.Windows.Forms.CheckBox()
+        Me.RDBDYEDFOLD = New System.Windows.Forms.RadioButton()
         Me.BlendPanel1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -84,8 +85,21 @@ Partial Class Mfg1Filter
         Me.BlendPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BlendPanel1.Location = New System.Drawing.Point(0, 0)
         Me.BlendPanel1.Name = "BlendPanel1"
-        Me.BlendPanel1.Size = New System.Drawing.Size(331, 437)
+        Me.BlendPanel1.Size = New System.Drawing.Size(331, 508)
         Me.BlendPanel1.TabIndex = 4
+        '
+        'CHKOURQUALITY
+        '
+        Me.CHKOURQUALITY.AutoSize = True
+        Me.CHKOURQUALITY.BackColor = System.Drawing.Color.Transparent
+        Me.CHKOURQUALITY.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CHKOURQUALITY.ForeColor = System.Drawing.Color.Black
+        Me.CHKOURQUALITY.Location = New System.Drawing.Point(181, 283)
+        Me.CHKOURQUALITY.Name = "CHKOURQUALITY"
+        Me.CHKOURQUALITY.Size = New System.Drawing.Size(89, 18)
+        Me.CHKOURQUALITY.TabIndex = 441
+        Me.CHKOURQUALITY.Text = "Self Quality"
+        Me.CHKOURQUALITY.UseVisualStyleBackColor = False
         '
         'CHKVALUE
         '
@@ -107,7 +121,7 @@ Partial Class Mfg1Filter
         Me.GroupBox2.Controls.Add(Me.RDBDONE)
         Me.GroupBox2.Controls.Add(Me.RDBINPROCESS)
         Me.GroupBox2.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(167, 172)
+        Me.GroupBox2.Location = New System.Drawing.Point(170, 172)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(121, 105)
         Me.GroupBox2.TabIndex = 5
@@ -217,15 +231,16 @@ Partial Class Mfg1Filter
         'GroupBox3
         '
         Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox3.Controls.Add(Me.RDBDYEDFOLD)
         Me.GroupBox3.Controls.Add(Me.RDBLOTSUMMARY)
         Me.GroupBox3.Controls.Add(Me.RDBLOTDETAIL)
         Me.GroupBox3.Controls.Add(Me.RDBMONTHLY)
         Me.GroupBox3.Controls.Add(Me.Rdbsummary)
         Me.GroupBox3.Controls.Add(Me.rdbdetail)
         Me.GroupBox3.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(43, 172)
+        Me.GroupBox3.Location = New System.Drawing.Point(25, 172)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(121, 145)
+        Me.GroupBox3.Size = New System.Drawing.Size(139, 184)
         Me.GroupBox3.TabIndex = 4
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Reports"
@@ -233,7 +248,7 @@ Partial Class Mfg1Filter
         'RDBLOTSUMMARY
         '
         Me.RDBLOTSUMMARY.AutoSize = True
-        Me.RDBLOTSUMMARY.Location = New System.Drawing.Point(23, 118)
+        Me.RDBLOTSUMMARY.Location = New System.Drawing.Point(16, 117)
         Me.RDBLOTSUMMARY.Name = "RDBLOTSUMMARY"
         Me.RDBLOTSUMMARY.Size = New System.Drawing.Size(93, 18)
         Me.RDBLOTSUMMARY.TabIndex = 4
@@ -243,7 +258,7 @@ Partial Class Mfg1Filter
         'RDBLOTDETAIL
         '
         Me.RDBLOTDETAIL.AutoSize = True
-        Me.RDBLOTDETAIL.Location = New System.Drawing.Point(23, 97)
+        Me.RDBLOTDETAIL.Location = New System.Drawing.Point(16, 94)
         Me.RDBLOTDETAIL.Name = "RDBLOTDETAIL"
         Me.RDBLOTDETAIL.Size = New System.Drawing.Size(82, 18)
         Me.RDBLOTDETAIL.TabIndex = 3
@@ -253,7 +268,7 @@ Partial Class Mfg1Filter
         'RDBMONTHLY
         '
         Me.RDBMONTHLY.AutoSize = True
-        Me.RDBMONTHLY.Location = New System.Drawing.Point(23, 73)
+        Me.RDBMONTHLY.Location = New System.Drawing.Point(16, 71)
         Me.RDBMONTHLY.Name = "RDBMONTHLY"
         Me.RDBMONTHLY.Size = New System.Drawing.Size(69, 18)
         Me.RDBMONTHLY.TabIndex = 2
@@ -263,7 +278,7 @@ Partial Class Mfg1Filter
         'Rdbsummary
         '
         Me.Rdbsummary.AutoSize = True
-        Me.Rdbsummary.Location = New System.Drawing.Point(23, 49)
+        Me.Rdbsummary.Location = New System.Drawing.Point(16, 48)
         Me.Rdbsummary.Name = "Rdbsummary"
         Me.Rdbsummary.Size = New System.Drawing.Size(74, 18)
         Me.Rdbsummary.TabIndex = 1
@@ -274,7 +289,7 @@ Partial Class Mfg1Filter
         '
         Me.rdbdetail.AutoSize = True
         Me.rdbdetail.Checked = True
-        Me.rdbdetail.Location = New System.Drawing.Point(23, 25)
+        Me.rdbdetail.Location = New System.Drawing.Point(16, 25)
         Me.rdbdetail.Name = "rdbdetail"
         Me.rdbdetail.Size = New System.Drawing.Size(65, 18)
         Me.rdbdetail.TabIndex = 0
@@ -339,7 +354,7 @@ Partial Class Mfg1Filter
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.chkdate)
         Me.GroupBox1.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(25, 334)
+        Me.GroupBox1.Location = New System.Drawing.Point(25, 412)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(280, 53)
         Me.GroupBox1.TabIndex = 432
@@ -411,7 +426,7 @@ Partial Class Mfg1Filter
         Me.cmdshowreport.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdshowreport.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.cmdshowreport.Image = Global.TexPro_V1.My.Resources.Resources.showreport
-        Me.cmdshowreport.Location = New System.Drawing.Point(89, 390)
+        Me.cmdshowreport.Location = New System.Drawing.Point(89, 468)
         Me.cmdshowreport.Name = "cmdshowreport"
         Me.cmdshowreport.Size = New System.Drawing.Size(75, 28)
         Me.cmdshowreport.TabIndex = 5
@@ -426,7 +441,7 @@ Partial Class Mfg1Filter
         Me.cmdexit.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmdexit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.cmdexit.Image = Global.TexPro_V1.My.Resources.Resources._Exit
-        Me.cmdexit.Location = New System.Drawing.Point(170, 394)
+        Me.cmdexit.Location = New System.Drawing.Point(170, 472)
         Me.cmdexit.Name = "cmdexit"
         Me.cmdexit.Size = New System.Drawing.Size(72, 24)
         Me.cmdexit.TabIndex = 6
@@ -444,24 +459,21 @@ Partial Class Mfg1Filter
         Me.lblheading.TabIndex = 315
         Me.lblheading.Text = "Mfg.(Before Cutting) Register"
         '
-        'CHKOURQUALITY
+        'RDBDYEDFOLD
         '
-        Me.CHKOURQUALITY.AutoSize = True
-        Me.CHKOURQUALITY.BackColor = System.Drawing.Color.Transparent
-        Me.CHKOURQUALITY.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CHKOURQUALITY.ForeColor = System.Drawing.Color.Black
-        Me.CHKOURQUALITY.Location = New System.Drawing.Point(178, 283)
-        Me.CHKOURQUALITY.Name = "CHKOURQUALITY"
-        Me.CHKOURQUALITY.Size = New System.Drawing.Size(89, 18)
-        Me.CHKOURQUALITY.TabIndex = 441
-        Me.CHKOURQUALITY.Text = "Self Quality"
-        Me.CHKOURQUALITY.UseVisualStyleBackColor = False
+        Me.RDBDYEDFOLD.AutoSize = True
+        Me.RDBDYEDFOLD.Location = New System.Drawing.Point(15, 140)
+        Me.RDBDYEDFOLD.Name = "RDBDYEDFOLD"
+        Me.RDBDYEDFOLD.Size = New System.Drawing.Size(86, 18)
+        Me.RDBDYEDFOLD.TabIndex = 5
+        Me.RDBDYEDFOLD.Text = "Dyed - Fold"
+        Me.RDBDYEDFOLD.UseVisualStyleBackColor = True
         '
         'Mfg1Filter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(331, 437)
+        Me.ClientSize = New System.Drawing.Size(331, 508)
         Me.Controls.Add(Me.BlendPanel1)
         Me.KeyPreview = True
         Me.Name = "Mfg1Filter"
@@ -509,4 +521,5 @@ Partial Class Mfg1Filter
     Friend WithEvents RDBLOTSUMMARY As System.Windows.Forms.RadioButton
     Friend WithEvents CHKVALUE As System.Windows.Forms.CheckBox
     Friend WithEvents CHKOURQUALITY As CheckBox
+    Friend WithEvents RDBDYEDFOLD As RadioButton
 End Class

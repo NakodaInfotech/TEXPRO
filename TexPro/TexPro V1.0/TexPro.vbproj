@@ -1438,6 +1438,12 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Reports\Crystal Reports\Packing Slip\Final Packing Slip\Fpsreport_TULSI1.vb">
+      <DependentUpon>Fpsreport_TULSI.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Reports\Crystal Reports\Packing Slip\Final Packing Slip\Fpsreport_RND.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -2439,6 +2445,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LooseStockReport.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Crystal Reports\mgf\MFGDYEDFOLDREPORT.vb">
+      <DependentUpon>MFGDYEDFOLDREPORT.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Reports\Crystal Reports\TDS\TDSPartyWiseReport.vb">
       <AutoGen>True</AutoGen>
@@ -5385,6 +5397,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>FPSItemDetailReport.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Crystal Reports\Packing Slip\Final Packing Slip\Fpsreport_TULSI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Fpsreport_TULSI1.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Crystal Reports\Packing Slip\Final Packing Slip\Fpsreport_RND.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Fpsreport_RND.vb</LastGenOutput>
@@ -6052,6 +6068,10 @@
     <EmbeddedResource Include="Reports\Crystal Reports\Stocks\Loose Stock\LooseStockReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>LooseStockReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Crystal Reports\mgf\MFGDYEDFOLDREPORT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MFGDYEDFOLDREPORT.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Crystal Reports\TDS\TDSPartyWiseReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

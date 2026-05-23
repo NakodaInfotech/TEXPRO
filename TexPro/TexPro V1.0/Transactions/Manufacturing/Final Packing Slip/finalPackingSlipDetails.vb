@@ -237,7 +237,10 @@ Public Class finalPackingSlipDetails
             ElseIf ClientName = "DHANLAXMI" Or ClientName = "SHUBHLAXMI" Then
                 OBJ = New FINALPACKINGSLIP_DHANLAXMI
             Else
-                OBJ = New Fpsreport_RND
+                'this is original
+                'OBJ = New Fpsreport_RND
+                OBJ = New Fpsreport_TULSI1
+
             End If
 
             '**************** SET SERVER ************************

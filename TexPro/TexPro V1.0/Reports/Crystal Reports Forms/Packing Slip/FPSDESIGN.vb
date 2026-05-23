@@ -16,7 +16,10 @@ Public Class FPSDESIGN
     Public PERIOD As String
     Public VENDORNAME As String = ""
 
-    Dim RPTFPS As New Fpsreport_RND
+    'this is original
+    'Dim RPTFPS As New Fpsreport_RND
+    Dim RPTFPS As New Fpsreport_TULSI1
+
     Dim RPTFPS_MONOGRAM As New FINALPACKINGSLIP_MONOGRAM
     Dim RPTFPS_DHANLAXMI As New FINALPACKINGSLIP_DHANLAXMI
 
@@ -296,14 +299,15 @@ Public Class FPSDESIGN
                     RPTFPS_DHANLAXMI.DataDefinition.FormulaFields("MULTILOTNO").Text = "'" & TEMPLOTNO & "'"
                     crpo.ReportSource = RPTFPS_DHANLAXMI
                 Else
-                    If goodcut = True Then
-                        RPTFPS.GroupHeaderSection7.SectionFormat.EnableSuppress = True
-                        RPTFPS.GroupHeaderSection10.SectionFormat.EnableSuppress = False
-                        RPTFPS.GroupHeaderSection8.SectionFormat.EnableSuppress = True
-                        RPTFPS.GroupHeaderSection9.SectionFormat.EnableSuppress = False
-                        RPTFPS.GroupFooterSection3.SectionFormat.EnableSuppress = True
-                        RPTFPS.GroupFooterSection7.SectionFormat.EnableSuppress = False
-                    End If
+                    'THIS WAS FOR _RND REPORT
+                    'If goodcut = True Then
+                    '    RPTFPS.GroupHeaderSection7.SectionFormat.EnableSuppress = True
+                    '    RPTFPS.GroupHeaderSection10.SectionFormat.EnableSuppress = False
+                    '    RPTFPS.GroupHeaderSection8.SectionFormat.EnableSuppress = True
+                    '    RPTFPS.GroupHeaderSection9.SectionFormat.EnableSuppress = False
+                    '    RPTFPS.GroupFooterSection3.SectionFormat.EnableSuppress = True
+                    '    RPTFPS.GroupFooterSection7.SectionFormat.EnableSuppress = False
+                    'End If
                     If HEADER = False Then RPTFPS.DataDefinition.FormulaFields("HIDEHEADER").Text = 1 Else RPTFPS.DataDefinition.FormulaFields("HIDEHEADER").Text = 0
                     RPTFPS.DataDefinition.FormulaFields("JOBNO").Text = "'" & JOBNO & "'"
                     crpo.ReportSource = RPTFPS
@@ -641,14 +645,15 @@ SKIPINVOICE:
 
 
                 Else
-                    If goodcut = True Then
-                        RPTFPS.GroupHeaderSection7.SectionFormat.EnableSuppress = True
-                        RPTFPS.GroupHeaderSection10.SectionFormat.EnableSuppress = False
-                        RPTFPS.GroupHeaderSection8.SectionFormat.EnableSuppress = True
-                        RPTFPS.GroupHeaderSection9.SectionFormat.EnableSuppress = False
-                        RPTFPS.GroupFooterSection3.SectionFormat.EnableSuppress = True
-                        RPTFPS.GroupFooterSection7.SectionFormat.EnableSuppress = False
-                    End If
+                    'THIS WAS FOR _RND REPORT
+                    'If goodcut = True Then
+                    '    RPTFPS.GroupHeaderSection7.SectionFormat.EnableSuppress = True
+                    '    RPTFPS.GroupHeaderSection10.SectionFormat.EnableSuppress = False
+                    '    RPTFPS.GroupHeaderSection8.SectionFormat.EnableSuppress = True
+                    '    RPTFPS.GroupHeaderSection9.SectionFormat.EnableSuppress = False
+                    '    RPTFPS.GroupFooterSection3.SectionFormat.EnableSuppress = True
+                    '    RPTFPS.GroupFooterSection7.SectionFormat.EnableSuppress = False
+                    'End If
 
                     If HEADER = False Then
                         RPTFPS.DataDefinition.FormulaFields("HIDEHEADER").Text = 1

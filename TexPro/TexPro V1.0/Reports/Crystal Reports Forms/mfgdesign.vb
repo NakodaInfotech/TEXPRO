@@ -39,6 +39,8 @@ Public Class mfgdesign
     Dim rptmfg1LOTDETAIL As New MFGLOTREPORT
     Dim rptmfg1SUMM As New MFGSUMMARYREPORT
     Dim rptmfg1MONTHLY As New MFGMONTHLYREPORT
+    Dim RPTMFG1DYEDFOLD As New MFGDYEDFOLDREPORT
+
     Dim rptmfg2 As New MFG2report
 
     Dim rptmfg2DETAIL As New MFG2DETAILREPORT_NEW
@@ -171,6 +173,8 @@ Public Class mfgdesign
                 crTables = rptmfg1SUMM.Database.Tables
             ElseIf frmstring = "MFGMONTHLY" Then
                 crTables = rptmfg1MONTHLY.Database.Tables
+            ElseIf frmstring = "MFGDYEDFOLD" Then
+                crTables = RPTMFG1DYEDFOLD.Database.Tables
 
             ElseIf frmstring = "MFGFULLSUMMARY" Then
                 crTables = rptmfgfullSUMM.Database.Tables
@@ -338,6 +342,10 @@ Public Class mfgdesign
             ElseIf frmstring = "MFGMONTHLY" Then
                 crpo.ReportSource = rptmfg1MONTHLY
                 rptmfg1MONTHLY.DataDefinition.FormulaFields("period").Text = "'" & PERIOD & "'"
+
+            ElseIf frmstring = "MFGDYEDFOLD" Then
+                crpo.ReportSource = RPTMFG1DYEDFOLD
+                RPTMFG1DYEDFOLD.DataDefinition.FormulaFields("period").Text = "'" & PERIOD & "'"
 
             ElseIf frmstring = "LOTHISTORY" Then
                 crpo.ReportSource = rptlothistory
@@ -585,6 +593,12 @@ Public Class mfgdesign
                 expo.ExportFormatType = ExportFormatType.PortableDocFormat
                 expo.DestinationOptions = oDfDopt
                 rptmfg1MONTHLY.Export()
+            ElseIf frmstring = "MFGDYEDFOLD" Then
+                expo = RPTMFG1DYEDFOLD.ExportOptions
+                expo.ExportDestinationType = ExportDestinationType.DiskFile
+                expo.ExportFormatType = ExportFormatType.PortableDocFormat
+                expo.DestinationOptions = oDfDopt
+                RPTMFG1DYEDFOLD.Export()
             ElseIf frmstring = "LOTHISTORY" Then
                 expo = rptlothistory.ExportOptions
                 expo.ExportDestinationType = ExportDestinationType.DiskFile

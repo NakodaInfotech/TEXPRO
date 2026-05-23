@@ -133,7 +133,7 @@ Partial Class UpdateJobMerchant
         Me.CMBTYPE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CMBTYPE.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CMBTYPE.FormattingEnabled = True
-        Me.CMBTYPE.Items.AddRange(New Object() {"CUTTING", "MFG", "FINALPACKING", "GRN AND PACKING", "JOBBALE"})
+        Me.CMBTYPE.Items.AddRange(New Object() {"CUTTING", "MFG", "FINALPACKING", "GRN AND PACKING", "JOBBALE", "OPJOBBALE"})
         Me.CMBTYPE.Location = New System.Drawing.Point(162, 17)
         Me.CMBTYPE.MaxDropDownItems = 14
         Me.CMBTYPE.Name = "CMBTYPE"
