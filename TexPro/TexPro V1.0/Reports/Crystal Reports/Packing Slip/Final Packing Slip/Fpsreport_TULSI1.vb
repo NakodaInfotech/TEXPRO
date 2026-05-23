@@ -18,7 +18,7 @@ Imports System
 Imports System.ComponentModel
 
 
-Public Class Fpsreport_TULSI1
+Public Class Fpsreport_TULSI
     Inherits ReportClass
     
     Public Sub New()
@@ -136,7 +136,7 @@ Public Class CachedFpsreport_TULSI
     End Property
     
     Public Overridable Function CreateReport() As CrystalDecisions.CrystalReports.Engine.ReportDocument Implements CrystalDecisions.ReportSource.ICachedReport.CreateReport
-        Dim rpt As Fpsreport_TULSI1 = New Fpsreport_TULSI1()
+        Dim rpt As Fpsreport_TULSI = New Fpsreport_TULSI()
         rpt.Site = Me.Site
         Return rpt
     End Function

@@ -238,8 +238,8 @@ Public Class finalPackingSlipDetails
                 OBJ = New FINALPACKINGSLIP_DHANLAXMI
             Else
                 'this is original
-                'OBJ = New Fpsreport_RND
-                OBJ = New Fpsreport_TULSI1
+                OBJ = New Fpsreport_RND
+                'OBJ = New Fpsreport_TULSI
 
             End If
 
