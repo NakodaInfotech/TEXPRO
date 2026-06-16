@@ -63,6 +63,9 @@ line1:
                             objstock.frmstring = "MFG2LABOUR"
                         ElseIf RDOMERCHANTSUMMARY.Checked = True Then
                             objstock.frmstring = "MFG2STOCKSUMMARY"
+                            formula = "{MFGMASTER2.MFG_YEARID}= " & YearId
+                            If cmbprocess.Text.Trim <> "" Then formula = formula & " and {PROCESSMASTER.PROCESS_NAME}='" & cmbprocess.Text.Trim & "'"
+                            If cmbMerchant.Text.Trim <> "" Then formula = formula & " and {ITEMMASTER.ITEM_NAME}='" & cmbMerchant.Text.Trim & "'"
                         ElseIf RDBDESIGN.Checked = True Then
                             objstock.frmstring = "MFG2DESIGN"
                         End If
