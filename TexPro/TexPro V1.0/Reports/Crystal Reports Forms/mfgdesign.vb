@@ -346,6 +346,8 @@ Public Class mfgdesign
             ElseIf frmstring = "MFGDYEDFOLD" Then
                 crpo.ReportSource = RPTMFG1DYEDFOLD
                 RPTMFG1DYEDFOLD.DataDefinition.FormulaFields("period").Text = "'" & PERIOD & "'"
+                If SHOWOURQUALITY = True Then RPTMFG1DYEDFOLD.DataDefinition.FormulaFields("SHOWOURQUALITY").Text = "1"
+                RPTMFG1DYEDFOLD.DataDefinition.FormulaFields("postive").Text = Val(positive)
 
             ElseIf frmstring = "LOTHISTORY" Then
                 crpo.ReportSource = rptlothistory
